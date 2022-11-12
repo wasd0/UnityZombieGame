@@ -145,7 +145,7 @@ namespace Zenject
         {
             try
             {
-                var item = _factory.Create();
+                var item = _factory.CreateFromSpawnPosition();
 
                 if (!_container.IsValidating)
                 {
@@ -167,7 +167,7 @@ namespace Zenject
         {
             try
             {
-                _factory.Create();
+                _factory.CreateFromSpawnPosition();
             }
             catch (Exception e)
             {

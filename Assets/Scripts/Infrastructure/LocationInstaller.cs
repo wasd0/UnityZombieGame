@@ -34,7 +34,7 @@ namespace Installers
         public void Initialize() //TODO: убрать инициалайз и закинуть в SceneBootstrap.cs
         {
             var playerFactory = Container.Resolve<PlayerFactory>();
-            playerFactory.Create();
+            playerFactory.CreateFromSpawnPosition();
         }
     }
 }

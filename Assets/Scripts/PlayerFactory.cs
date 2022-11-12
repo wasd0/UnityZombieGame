@@ -15,7 +15,7 @@ public class PlayerFactory : IFactory<PlayerEntity>
         _diContainer = diContainer;
     }
     
-    public PlayerEntity Create()
+    public PlayerEntity CreateFromSpawnPosition()
     {
         Vector3 spawnPosition = _spawnPosition.Point.transform.position;
         

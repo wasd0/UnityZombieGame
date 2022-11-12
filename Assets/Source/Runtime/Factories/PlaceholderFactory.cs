@@ -14,7 +14,7 @@ namespace Zenject
 #if !NOT_UNITY3D
         [NotNull]
 #endif
-        public virtual TValue Create()
+        public virtual TValue CreateFromSpawnPosition()
         {
             return CreateInternal(new List<TypeValuePair>());
         }

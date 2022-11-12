@@ -9,7 +9,7 @@ public readonly struct SpawnPosition
         Player,
         Entity
     }
-    
+
     public SpawnPosition(Transform point)
     {
         Point = point;

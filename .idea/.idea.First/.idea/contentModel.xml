@@ -14,18 +14,21 @@
           <e p="PlayerInput.cs" t="Include" />
         </e>
         <e p="Materials" t="Include" />
-        <e p="Prefabs" t="Include" />
         <e p="Resources" t="Include" />
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CameraFollower.cs" t="Include" />
           <e p="Entity.cs" t="Include" />
+          <e p="IMovementService.cs" t="Include" />
           <e p="Infrastructure" t="Include">
             <e p="LocationInstaller.cs" t="Include" />
+            <e p="PlayerInstaller.cs" t="Include" />
           </e>
           <e p="PlayerEntity.cs" t="Include" />
           <e p="PlayerFactory.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
           <e p="SpawnPosition.cs" t="Include" />
+          <e p="WalkMovementService.cs" t="Include" />
         </e>
         <e p="Source" t="Include">
           <e p="Editor" t="Include">

@@ -27,7 +27,7 @@ namespace Zenject
             // Optional
         }
 
-        TValue IFactory<TValue>.Create()
+        TValue IFactory<TValue>.CreateFromSpawnPosition()
         {
             return Spawn();
         }
