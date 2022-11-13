@@ -7,14 +7,14 @@ namespace Infrastructure
     {
         public override void InstallBindings()
         {
-            BindMovementService();
+            BindPlayerMovementService();
         }
 
-        private void BindMovementService()
+        private void BindPlayerMovementService()
         {
             Container.
-                Bind<IMovementService>().
-                To<WalkMovementService>().
+                Bind<IMovementService<Player>>().
+                To<WalkMovementService<Player>>().
                 AsSingle().
                 NonLazy();
         }

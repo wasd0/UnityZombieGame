@@ -22,43 +22,19 @@
     <list default="true" id="29bfe3ff-127f-44ba-8493-a4f6863fdf32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TerrainMat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TerrainMat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0001-Add-new-scripts-to-my-project.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollower.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entity.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IMovementService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IMovementService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerEntity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerEntity.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerFactory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnPosition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WalkMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WalkMovementService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/FactoryProviderWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/FactoryProviderWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/IFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/IFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/PlaceholderFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/PlaceholderFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPoolBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPoolBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/PoolFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/PoolFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Providers/IFactoryProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Providers/IFactoryProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/New Terrain.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/New Terrain.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/TerrainData_e973d155-262a-452c-8456-c35cc13e35e6.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/TerrainData_e973d155-262a-452c-8456-c35cc13e35e6.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/TerrainData_fdf87fba-a870-483e-abd2-3e6d8bdcc5ad.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/TerrainData_fdf87fba-a870-483e-abd2-3e6d8bdcc5ad.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,17 +78,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerEntity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneBootstrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/GizmosDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/EnemyMarker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/ZombieWalkMovementService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/PlayerWalkMovementService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/EnemyMarker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/Zombie.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ZombieInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" />
       </list>
     </option>
   </component>
@@ -183,7 +168,8 @@
       <workItem from="1668287168964" duration="3947000" />
       <workItem from="1668291365011" duration="8000" />
       <workItem from="1668291646806" duration="619000" />
-      <workItem from="1668357704750" duration="7219000" />
+      <workItem from="1668357704750" duration="12037000" />
+      <workItem from="1668378497000" duration="10000" />
     </task>
     <servers />
   </component>

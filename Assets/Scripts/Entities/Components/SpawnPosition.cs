@@ -7,7 +7,7 @@ public readonly struct SpawnPosition
     public enum Markers
     {
         Player,
-        Entity
+        Enemy
     }
 
     public SpawnPosition(Transform point)

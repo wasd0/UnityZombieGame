@@ -24,8 +24,13 @@
               <e p="EnemyMarker.cs" t="Include" />
               <e p="SpawnPosition.cs" t="Include" />
             </e>
-            <e p="Entity.cs" t="Include" />
-            <e p="Player.cs" t="Include" />
+            <e p="Enemy" t="Include">
+              <e p="Zombie.cs" t="Include" />
+            </e>
+            <e p="Neutral" t="Include">
+              <e p="Entity.cs" t="Include" />
+              <e p="Player.cs" t="Include" />
+            </e>
           </e>
           <e p="Factories" t="Include">
             <e p="PlayerFactory.cs" t="Include" />
@@ -34,6 +39,7 @@
             <e p="LocationInstaller.cs" t="Include" />
             <e p="PlayerInstaller.cs" t="Include" />
             <e p="SceneBootstrap.cs" t="Include" />
+            <e p="ZombieInstaller.cs" t="Include" />
           </e>
           <e p="Services" t="Include">
             <e p="IMovementService.cs" t="Include" />
@@ -42,6 +48,7 @@
           <e p="Unity Objects" t="Include">
             <e p="CameraFollower.cs" t="Include" />
             <e p="PlayerMovementSystem.cs" t="Include" />
+            <e p="ZombieMovementSystem.cs" t="Include" />
           </e>
         </e>
         <e p="Source" t="Include">
