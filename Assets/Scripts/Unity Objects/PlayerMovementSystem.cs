@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementSystem : MonoBehaviour
 {
     [SerializeField] private float _speed;
     private IMovementService _movementService;

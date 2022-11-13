@@ -1,10 +1,10 @@
+using Factories;
 using UnityEngine;
 using Zenject;
-using IInitializable = Zenject.IInitializable;
 
-namespace Installers
+namespace Infrastructure
 {
-    public class LocationInstaller : MonoInstaller, IInitializable
+    public class LocationInstaller : MonoInstaller
     {
         [SerializeField] private Transform _playerSpawnPoint;
 
@@ -25,16 +25,10 @@ namespace Installers
         private void BindPlayer()
         {
             Container.
-                Bind<PlayerEntity>().
+                Bind<Player>().
                 FromFactory<PlayerFactory>().
                 AsSingle().
                 NonLazy();
-        }
-
-        public void Initialize() //TODO: убрать инициалайз и закинуть в SceneBootstrap.cs
-        {
-            var playerFactory = Container.Resolve<PlayerFactory>();
-            playerFactory.CreateFromSpawnPosition();
         }
     }
 }

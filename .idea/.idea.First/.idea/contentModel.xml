@@ -13,22 +13,36 @@
         <e p="Input System" t="Include">
           <e p="PlayerInput.cs" t="Include" />
         </e>
-        <e p="Materials" t="Include" />
-        <e p="Resources" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="Materials" t="Include" />
+          <e p="Terrain" t="Include" />
+        </e>
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="CameraFollower.cs" t="Include" />
-          <e p="Entity.cs" t="Include" />
-          <e p="IMovementService.cs" t="Include" />
+          <e p="Entities" t="Include">
+            <e p="Components" t="Include">
+              <e p="EnemyMarker.cs" t="Include" />
+              <e p="SpawnPosition.cs" t="Include" />
+            </e>
+            <e p="Entity.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+          </e>
+          <e p="Factories" t="Include">
+            <e p="PlayerFactory.cs" t="Include" />
+          </e>
           <e p="Infrastructure" t="Include">
             <e p="LocationInstaller.cs" t="Include" />
             <e p="PlayerInstaller.cs" t="Include" />
+            <e p="SceneBootstrap.cs" t="Include" />
           </e>
-          <e p="PlayerEntity.cs" t="Include" />
-          <e p="PlayerFactory.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
-          <e p="SpawnPosition.cs" t="Include" />
-          <e p="WalkMovementService.cs" t="Include" />
+          <e p="Services" t="Include">
+            <e p="IMovementService.cs" t="Include" />
+            <e p="WalkMovementService.cs" t="Include" />
+          </e>
+          <e p="Unity Objects" t="Include">
+            <e p="CameraFollower.cs" t="Include" />
+            <e p="PlayerMovementSystem.cs" t="Include" />
+          </e>
         </e>
         <e p="Source" t="Include">
           <e p="Editor" t="Include">
@@ -482,7 +496,6 @@
             <e p="link.xml" t="Include" />
           </e>
         </e>
-        <e p="Terrain" t="Include" />
       </e>
       <e p="Extenject-Async.csproj" t="IncludeRecursive" />
       <e p="First.sln" t="IncludeFlat" />

@@ -76,7 +76,7 @@ namespace Zenject
             }
             else
             {
-                buffer.Add(((IFactory<TContract>)factory).CreateFromSpawnPosition());
+                buffer.Add(((IFactory<TContract>)factory).CreatePlayer());
             }
         }
     }

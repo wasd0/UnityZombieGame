@@ -6,7 +6,7 @@ namespace Zenject
 
     public interface IFactory<out TValue> : IFactory
     {
-        TValue CreateFromSpawnPosition();
+        TValue CreatePlayer();
     }
 
     public interface IFactory<in TParam1, out TValue> : IFactory

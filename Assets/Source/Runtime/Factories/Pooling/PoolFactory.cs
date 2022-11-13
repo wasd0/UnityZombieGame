@@ -14,7 +14,7 @@ namespace Zenject
             _pool = pool;
         }
 
-        public T CreateFromSpawnPosition()
+        public T CreatePlayer()
         {
             return _pool.Spawn();
         }

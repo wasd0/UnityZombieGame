@@ -16,7 +16,7 @@ namespace Zenject
             _injectContext = injectContext;
         }
 
-        public TContract CreateFromSpawnPosition()
+        public TContract CreatePlayer()
         {
             var instance = _provider.GetInstance(_injectContext);
 

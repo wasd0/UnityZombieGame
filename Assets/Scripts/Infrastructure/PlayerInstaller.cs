@@ -1,6 +1,7 @@
+using Services;
 using Zenject;
 
-namespace Installers
+namespace Infrastructure
 {
     public class PlayerInstaller : MonoInstaller
     {

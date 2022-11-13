@@ -8,7 +8,7 @@ public class CameraFollower : MonoBehaviour
     private Transform _target;
 
     [Inject]
-    private void Construct(PlayerEntity targetOfFollow)
+    private void Construct(Player targetOfFollow)
     {
         _target = targetOfFollow.transform;
     }
