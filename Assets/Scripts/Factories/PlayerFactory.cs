@@ -3,29 +3,18 @@ using Zenject;
 
 namespace Factories
 {
-    public class PlayerFactory : IFactory<Player>
+    public class PlayerFactory : EntityFactory<Player>
     {
-        [Inject(Id = SpawnPosition.Markers.Player)]
-        private SpawnPosition _spawnPosition;
-        private const string PLAYER_PATH = "Player";
-        private DiContainer _diContainer;
-
-        [Inject]
-        private void Construct(DiContainer diContainer)
-        {
-            _diContainer = diContainer;
-        }
-
-        public Player CreatePlayer()
-        {
-            Vector3 spawnPosition = _spawnPosition.Point.transform.position;
+        public override Vector3 SpawnPosition { get; protected set; }
+        public override string PrefabPath { get; protected set; }
         
-            var player = _diContainer.
-                InstantiatePrefabResourceForComponent<Player>(
-                    PLAYER_PATH, spawnPosition,
-                    Quaternion.identity, null);
-            player.name = typeof(Player).ToString();
-            return player;
+        private const string PLAYER_PATH = "Player";
+        
+        [Inject]
+        private void Construct(PlayerSpawnPosition playerSpawnPosition)
+        {
+            SpawnPosition = playerSpawnPosition.PointTransform.position;
+            PrefabPath = PLAYER_PATH;
         }
     }
 }

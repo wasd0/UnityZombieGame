@@ -2,26 +2,33 @@ using Factories;
 using UnityEngine;
 using Zenject;
 
-namespace Infrastructure
+namespace Infrastructure.Installers
 {
     public class LocationInstaller : MonoInstaller
     {
-        [SerializeField] private GameObject _zombiePrefab;
-        [SerializeField] private Transform _playerSpawnPoint;
+        [SerializeField] private Transform _playerSpawnPosition;
+        [SerializeField] private Transform _zombieSpawnPosition;
 
         public override void InstallBindings()
         {
             BindPlayerSpawnPosition();
+            BindZombieSpawnPosition();
             BindPlayer();
             BindZombie();
         }
 
         private void BindPlayerSpawnPosition()
         {
-            Container.Bind<SpawnPosition>().
-                WithId(SpawnPosition.Markers.Player).
+            Container.Bind<PlayerSpawnPosition>().
                 AsSingle().
-                WithArguments(_playerSpawnPoint);
+                WithArguments(_playerSpawnPosition);
+        }
+        
+        private void BindZombieSpawnPosition()
+        {
+            Container.Bind<ZombieSpawnPosition>().
+                AsSingle().
+                WithArguments(_zombieSpawnPosition);
         }
 
         private void BindPlayer()
@@ -33,12 +40,11 @@ namespace Infrastructure
                 NonLazy();
         }
 
-        public void BindZombie()
+        private void BindZombie()
         {
-            //TODO: Создать фабрбику зомби
             Container.
                 Bind<Zombie>().
-                FromComponentInNewPrefab(_zombiePrefab).
+                FromFactory<ZombieFactory>().
                 AsSingle().
                 NonLazy();
         }

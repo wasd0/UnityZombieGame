@@ -5,11 +5,7 @@ namespace UnityObjects
 {
     public class ZombieMovementSystem : MonoBehaviour
     {
-        #region Test
-
         private Transform _target;
-
-        #endregion
 
         [SerializeField] private float _speed;
         private IMovementService<Zombie> _movementService;

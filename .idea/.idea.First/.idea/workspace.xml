@@ -20,13 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29bfe3ff-127f-44ba-8493-a4f6863fdf32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Zombie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/EnemyMarker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/EnemyMarker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/EnemyMarker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/EnemyMarker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ZombieInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ZombieInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ZombieInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ZombieInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/FactoryProviderWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/FactoryProviderWrapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/IFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/IFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/PlaceholderFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/PlaceholderFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPoolBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPoolBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/PoolFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/PoolFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Providers/IFactoryProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Providers/IFactoryProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +59,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5B293C7-4049-457C-ABC2-8437C5A76392/a8/abba1cda/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mobile.notifications@2.0.2/Editor/NotificationSettingsProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1D3DACD0-0CE4-41DC-8C61-D528A2193088/24/210b895a/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Components/EnemyMarker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factories/Components/EnemyMarker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Interface/Fonts/FontWeight.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -72,10 +91,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SceneBootstrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/GizmosDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/ZombieWalkMovementService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/PlayerWalkMovementService.cs" />
@@ -88,9 +105,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ZombieInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Source/Runtime/Factories/IFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerSpawnPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ZombieInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" />
       </list>
     </option>
   </component>
@@ -163,7 +189,7 @@
       <workItem from="1668291646806" duration="619000" />
       <workItem from="1668357704750" duration="12037000" />
       <workItem from="1668378497000" duration="10000" />
-      <workItem from="1668418664323" duration="4253000" />
+      <workItem from="1668418664323" duration="11635000" />
     </task>
     <servers />
   </component>
@@ -269,17 +295,21 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="164" key="Rider.ProjectTemplateDialog.Size/0.0.1536.864@0.0.1536.864" timestamp="1667641755553" />
+    <state x="599" y="133" key="RiderGenerateDialog" timestamp="1668434186191">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="599" y="133" key="RiderGenerateDialog/0.0.1536.864@0.0.1536.864" timestamp="1668434186191" />
     <state x="151" y="42" key="SettingsEditor" timestamp="1667556987117">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="151" y="42" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1667556987117" />
-    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1668422937353">
+    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1668429632481">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1668422937353" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1668423046252">
+    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1668429632481" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1668433049798">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1668423046252" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1668433049798" />
   </component>
 </project>

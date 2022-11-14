@@ -1,7 +1,7 @@
 using Services;
 using Zenject;
 
-namespace Infrastructure
+namespace Infrastructure.Installers
 {
     public class ZombieInstaller : MonoInstaller
     {

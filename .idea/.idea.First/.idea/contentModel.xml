@@ -20,10 +20,6 @@
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Entities" t="Include">
-            <e p="Components" t="Include">
-              <e p="EnemyMarker.cs" t="Include" />
-              <e p="SpawnPosition.cs" t="Include" />
-            </e>
             <e p="Enemy" t="Include">
               <e p="Zombie.cs" t="Include" />
             </e>
@@ -33,13 +29,22 @@
             </e>
           </e>
           <e p="Factories" t="Include">
+            <e p="Components" t="Include">
+              <e p="EnemyMarker.cs" t="Include" />
+              <e p="PlayerSpawnPosition.cs" t="Include" />
+              <e p="ZombieSpawnPosition.cs" t="Include" />
+            </e>
+            <e p="EntityFactory.cs" t="Include" />
             <e p="PlayerFactory.cs" t="Include" />
+            <e p="ZombieFactory.cs" t="Include" />
           </e>
           <e p="Infrastructure" t="Include">
-            <e p="LocationInstaller.cs" t="Include" />
-            <e p="PlayerInstaller.cs" t="Include" />
+            <e p="Installers" t="Include">
+              <e p="LocationInstaller.cs" t="Include" />
+              <e p="PlayerInstaller.cs" t="Include" />
+              <e p="ZombieInstaller.cs" t="Include" />
+            </e>
             <e p="SceneBootstrap.cs" t="Include" />
-            <e p="ZombieInstaller.cs" t="Include" />
           </e>
           <e p="Services" t="Include">
             <e p="IMovementService.cs" t="Include" />
