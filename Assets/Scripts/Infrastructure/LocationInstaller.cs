@@ -38,7 +38,7 @@ namespace Infrastructure
             //TODO: Создать фабрбику зомби
             Container.
                 Bind<Zombie>().
-                FromNewComponentOnNewPrefab(_zombiePrefab).
+                FromComponentInNewPrefab(_zombiePrefab).
                 AsSingle().
                 NonLazy();
         }

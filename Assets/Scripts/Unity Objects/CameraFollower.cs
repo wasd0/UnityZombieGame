@@ -10,9 +10,9 @@ namespace UnityObjects
         private Transform _target;
 
         [Inject]
-        private void Construct(Player targetOfFollow)
+        private void Construct(Player player)
         {
-            _target = targetOfFollow.transform;
+            _target = player.transform;
         }
 
         private void Update()
@@ -24,7 +24,7 @@ namespace UnityObjects
         {
             if (_target != null)
             {
-                var position = _target.transform.position;
+                var position = _target.position;
                 float newPositionZ = position.z + _offsetZ;
                 float newPositionY = position.y + _offsetY;
                 transform.position = new Vector3(position.x, newPositionY, newPositionZ);

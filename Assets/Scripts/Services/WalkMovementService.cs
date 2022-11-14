@@ -17,7 +17,7 @@ namespace Services
         public void MoveInDirectionWithSpeed(Vector3 direction, float speed)
         {
             float fixedSpeed = speed * Time.deltaTime;
-            _entity.transform.position += direction * fixedSpeed;
+            _entity.transform.localPosition += direction * fixedSpeed;
         }
     }
 }

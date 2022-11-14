@@ -20,21 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29bfe3ff-127f-44ba-8493-a4f6863fdf32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0001-Add-new-scripts-to-my-project.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Zombie.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Entity.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,13 +83,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/EnemyMarker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/Zombie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ZombieInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" />
       </list>
     </option>
   </component>
@@ -170,6 +163,7 @@
       <workItem from="1668291646806" duration="619000" />
       <workItem from="1668357704750" duration="12037000" />
       <workItem from="1668378497000" duration="10000" />
+      <workItem from="1668418664323" duration="4253000" />
     </task>
     <servers />
   </component>
@@ -279,13 +273,13 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="151" y="42" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1667556987117" />
-    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1668369837834">
+    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1668422937353">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1668369837834" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1668202046718">
+    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1668422937353" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1668423046252">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1668202046718" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1668423046252" />
   </component>
 </project>
