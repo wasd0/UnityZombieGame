@@ -35,7 +35,6 @@
               <e p="PlayerSpawnPosition.cs" t="Include" />
               <e p="ZombieSpawnPosition.cs" t="Include" />
             </e>
-            <e p="EntityFactory.cs" t="Include" />
             <e p="PlayerFactory.cs" t="Include" />
             <e p="ZombieFactory.cs" t="Include" />
           </e>
@@ -43,8 +42,6 @@
             <e p="Installers" t="Include">
               <e p="FactoryInstaller.cs" t="Include" />
               <e p="LocationInstaller.cs" t="Include" />
-              <e p="PlayerInstaller.cs" t="Include" />
-              <e p="ZombieInstaller.cs" t="Include" />
             </e>
             <e p="SceneBootstrap.cs" t="Include" />
           </e>

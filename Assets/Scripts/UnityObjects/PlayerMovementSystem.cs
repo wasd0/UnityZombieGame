@@ -5,13 +5,12 @@ namespace UnityObjects
 {
     public class PlayerMovementSystem : MonoBehaviour
     {
-        [SerializeField] private float _speed;
-        private IMovementService<Player> _movementService;
+        [SerializeField] private float _speed = 5;
+        private IMovementService _movementService;
         private Vector3 _moveDirection;
         private PlayerInput _input;
-
-        [Inject]
-        private void Construct(IMovementService<Player> movementService)
+        
+        public void SetMovementService(IMovementService movementService)
         {
             _movementService = movementService;
         }
@@ -37,7 +36,7 @@ namespace UnityObjects
             float z = _input.Movement.WASD.ReadValue<Vector2>().y;
             _moveDirection = new Vector3(x, 0, z);
 
-            _movementService.MoveInDirectionWithSpeed(_moveDirection, _speed);
+            _movementService.MoveGameObjectInDirectionWithSpeed(gameObject, _moveDirection, _speed);
         }
     }
 }

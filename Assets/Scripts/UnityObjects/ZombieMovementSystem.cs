@@ -5,35 +5,40 @@ namespace UnityObjects
 {
     public class ZombieMovementSystem : MonoBehaviour
     {
-        private Transform _target;
-
         [SerializeField] private float _speed = 2;
-        private IMovementService<Zombie> _movementService;
+        [Inject] private Player _player;
 
-        [Inject]
-        private void Construct(IMovementService<Zombie> movementService, Player player)
+        private IMovementService _movementService;
+
+        public void SetMovementService(IMovementService movementService)
         {
             _movementService = movementService;
-            _target = player.transform;
         }
 
-        private void FixedUpdate()
+        private void LateUpdate()
         {
             //TODO: Change Test variant
-            if (gameObject != null)
-                TestZombieMovement(_target.position);
+            if (IsPlayerALive())
+                TestZombieMovement(_player.transform.position);
         }
 
         private void TestZombieMovement(Vector3 targetPosition)
         {
             if (transform.localPosition.x <= targetPosition.x)
-                _movementService.MoveInDirectionWithSpeed(Vector3.right, _speed);
+                _movementService.MoveGameObjectInDirectionWithSpeed(gameObject, Vector3.right, _speed);
             else
-                _movementService.MoveInDirectionWithSpeed(Vector3.left, _speed);
+                _movementService.MoveGameObjectInDirectionWithSpeed(gameObject, Vector3.left, _speed);
             if (transform.localPosition.z <= targetPosition.z)
-                _movementService.MoveInDirectionWithSpeed(Vector3.forward, _speed);
+                _movementService.MoveGameObjectInDirectionWithSpeed(gameObject, Vector3.forward, _speed);
             else
-                _movementService.MoveInDirectionWithSpeed(Vector3.back, _speed);
+                _movementService.MoveGameObjectInDirectionWithSpeed(gameObject, Vector3.back, _speed);
+        }
+
+        private bool IsPlayerALive()
+        {
+            if (_player == null)
+                enabled = false;
+            return true;
         }
     }
 }
