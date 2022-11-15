@@ -1,17 +1,25 @@
+using System;
 using Factories;
+using UnityEngine;
 using Zenject;
 
 namespace Infrastructure
 {
-    public class SceneBootstrap : IInitializable
+    public class SceneBootstrap : MonoBehaviour
     {
-        private readonly PlayerFactory _playerFactory = new PlayerFactory();
-        private readonly ZombieFactory _zombieFactory = new ZombieFactory();
-    
-        public void Initialize()
+        private PlayerFactory _playerFactory;
+        private ZombieFactory _zombieFactory;
+
+        [Inject]
+        private void Construct(ZombieFactory zombieFactory)
         {
-            _playerFactory.Create();
-            _zombieFactory.Create();
+            _zombieFactory = zombieFactory;
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyUp(KeyCode.C))
+                _zombieFactory.Create();
         }
     }
 }

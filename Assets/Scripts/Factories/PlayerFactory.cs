@@ -8,7 +8,7 @@ namespace Factories
         public override Vector3 SpawnPosition { get; protected set; }
         public override string PrefabPath { get; protected set; }
         
-        private const string PLAYER_PATH = "Player";
+        private const string PLAYER_PATH = "Prefabs/Player";
         
         [Inject]
         private void Construct(PlayerSpawnPosition playerSpawnPosition)

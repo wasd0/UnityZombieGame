@@ -7,7 +7,7 @@ namespace UnityObjects
     {
         private Transform _target;
 
-        [SerializeField] private float _speed;
+        [SerializeField] private float _speed = 2;
         private IMovementService<Zombie> _movementService;
 
         [Inject]
@@ -17,19 +17,20 @@ namespace UnityObjects
             _target = player.transform;
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             //TODO: Change Test variant
-            TestZombieMovement(_target.position);
+            if (gameObject != null)
+                TestZombieMovement(_target.position);
         }
 
         private void TestZombieMovement(Vector3 targetPosition)
         {
-            if (transform.position.x <= targetPosition.x)
+            if (transform.localPosition.x <= targetPosition.x)
                 _movementService.MoveInDirectionWithSpeed(Vector3.right, _speed);
             else
                 _movementService.MoveInDirectionWithSpeed(Vector3.left, _speed);
-            if (transform.position.z <= targetPosition.z)
+            if (transform.localPosition.z <= targetPosition.z)
                 _movementService.MoveInDirectionWithSpeed(Vector3.forward, _speed);
             else
                 _movementService.MoveInDirectionWithSpeed(Vector3.back, _speed);

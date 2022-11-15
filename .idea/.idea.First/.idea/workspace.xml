@@ -4,10 +4,6 @@
     <expand>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -20,32 +16,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29bfe3ff-127f-44ba-8493-a4f6863fdf32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Main Camera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Main Camera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Zombie.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Zombie.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/EnemyMarker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/EnemyMarker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/EnemyMarker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/EnemyMarker.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/SpawnPosition.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/PlayerInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ZombieInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ZombieInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ZombieInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ZombieInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/FactoryProviderWrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/FactoryProviderWrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/IFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/IFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/PlaceholderFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/PlaceholderFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPoolBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/MemoryPoolBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/PoolFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Factories/Pooling/PoolFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Runtime/Providers/IFactoryProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Runtime/Providers/IFactoryProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/PlayerMovementSystem.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestInslaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayerFactory.PlayerFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/CameraInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" />
@@ -111,12 +98,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerSpawnPosition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ZombieInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ZombieInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerMovementSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/FactoryInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/ZombieMovementSystem.cs" />
       </list>
     </option>
   </component>

@@ -7,10 +7,10 @@ namespace Infrastructure.Installers
     {
         public override void InstallBindings()
         {
-            BindPlayerMovementService();
+            BindMovementService();
         }
 
-        private void BindPlayerMovementService()
+        private void BindMovementService()
         {
             Container.
                 Bind<IMovementService<Player>>().

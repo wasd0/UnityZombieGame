@@ -31,7 +31,7 @@ namespace UnityObjects
             _input.Disable();
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             float x = _input.Movement.WASD.ReadValue<Vector2>().x;
             float z = _input.Movement.WASD.ReadValue<Vector2>().y;
