@@ -37,7 +37,10 @@ namespace UnityObjects
         private bool IsPlayerALive()
         {
             if (_player == null)
+            {
                 enabled = false;
+                return false;
+            }
             return true;
         }
     }

@@ -35,6 +35,7 @@
               <e p="PlayerSpawnPosition.cs" t="Include" />
               <e p="ZombieSpawnPosition.cs" t="Include" />
             </e>
+            <e p="EntityFactory.cs" t="Include" />
             <e p="PlayerFactory.cs" t="Include" />
             <e p="ZombieFactory.cs" t="Include" />
           </e>

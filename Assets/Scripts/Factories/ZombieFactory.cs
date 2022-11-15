@@ -5,32 +5,21 @@ using Zenject;
 
 namespace Factories
 {
-    public class ZombieFactory : IFactory<Zombie>
+    public class ZombieFactory : EntityFactory<Zombie>
     {
-        private Vector3 _spawnPosition;
         private const string ZOMBIE_PATH = "Prefabs/Zombie";
-        private DiContainer _diContainer;
-
+        
+        protected override Vector3 SpawnPosition { get; set; }
+        protected override string PrefabPath { get; set; }
+        
         [Inject]
-        private void Construct(DiContainer diContainer, ZombieSpawnPosition zombieSpawnPosition)
+        private void Construct(ZombieSpawnPosition zombieSpawnPosition)
         {
-            _spawnPosition = zombieSpawnPosition.Point.position;
-            _diContainer = diContainer;
+            SpawnPosition = zombieSpawnPosition.Point.position;
+            PrefabPath = ZOMBIE_PATH;
         }
 
-        public Zombie Create()
-        {
-            Vector3 spawnPosition = _spawnPosition;
-
-            var zombie = _diContainer.InstantiatePrefabResourceForComponent<Zombie>(
-                ZOMBIE_PATH, spawnPosition,
-                Quaternion.identity, null);
-            InitializeMovementForZombie(zombie);
-            zombie.name = typeof(Zombie).ToString();
-            return zombie;
-        }
-
-        private void InitializeMovementForZombie(Zombie zombie)
+        protected override void InitializeMovementForEntity(Zombie zombie)
         {
             _diContainer.InstantiateComponent<ZombieMovementSystem>(zombie.gameObject);
             zombie.GetComponent<ZombieMovementSystem>().SetMovementService(new WalkMovementService());
