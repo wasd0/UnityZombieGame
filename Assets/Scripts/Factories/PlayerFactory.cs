@@ -1,3 +1,4 @@
+using Factories.Components;
 using Services;
 using UnityEngine;
 using UnityObjects;

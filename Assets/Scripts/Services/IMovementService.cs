@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public interface IMovementService
+namespace Services
 {
-    public void MoveGameObjectInDirectionWithSpeed(GameObject gameObject, Vector3 direction, float speed);
+    public interface IMovementService
+    {
+        public void MoveGameObjectInDirectionWithSpeed(GameObject gameObject, Vector3 direction, float speed);
+    }
 }

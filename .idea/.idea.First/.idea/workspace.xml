@@ -18,9 +18,15 @@
     <list default="true" id="29bfe3ff-127f-44ba-8493-a4f6863fdf32" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Zombie.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerMovementSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/ZombieMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/ZombieMovementSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,19 +38,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54E510DE-C0FF-4790-BABC-F832AFEC988F/38/fad79cb1/Physics.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5B293C7-4049-457C-ABC2-8437C5A76392/a8/abba1cda/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.mobile.notifications@2.0.2/Editor/NotificationSettingsProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1D3DACD0-0CE4-41DC-8C61-D528A2193088/24/210b895a/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DrawRayCast.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factories/Components/EnemyMarker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Interface/Fonts/FontWeight.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54E510DE-C0FF-4790-BABC-F832AFEC988F/f1/2d98c265/RaycastHit.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/PlayerInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Source/Runtime/Main/DiContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerEntityFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Source/Runtime/Binding/Binders/ConcreteBinders/ConcreteIdBinderGeneric.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entity.cs" />
@@ -85,13 +91,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/MovementSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/CameraFollower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerMovementSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneBootstrap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/Components/PlayerSpawnPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerMovementSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/ZombieLook.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrawRayCast.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/ZombieMovementSystem.cs" />
       </list>
     </option>
@@ -167,6 +176,8 @@
       <workItem from="1668378497000" duration="10000" />
       <workItem from="1668418664323" duration="11635000" />
       <workItem from="1668544568809" duration="7852000" />
+      <workItem from="1668587050888" duration="6383000" />
+      <workItem from="1668632224918" duration="16115000" />
     </task>
     <servers />
   </component>
@@ -280,13 +291,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="151" y="42" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1667556987117" />
-    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1668429632481">
+    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1668647516784">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1668429632481" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1668548225741">
+    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1668647516784" />
+    <state x="304" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1668639165656">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1668548225741" />
+    <state x="304" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1668639165656" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1668589236325">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1668589236325" />
   </component>
 </project>

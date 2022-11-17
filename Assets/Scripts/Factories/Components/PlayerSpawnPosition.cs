@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public readonly struct PlayerSpawnPosition
+namespace Factories.Components
 {
-    public readonly Transform PointTransform;
-
-    public PlayerSpawnPosition(Transform pointTransform)
+    public readonly struct PlayerSpawnPosition
     {
-        PointTransform = pointTransform;
+        public readonly Transform PointTransform;
+
+        public PlayerSpawnPosition(Transform pointTransform)
+        {
+            PointTransform = pointTransform;
+        }
     }
 }
