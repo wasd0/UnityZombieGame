@@ -1,43 +1,39 @@
+using Entities.Components;
 using Services;
 using UnityEngine;
-using Zenject;
 
 namespace UnityObjects
 {
+    [RequireComponent(typeof(IDeviceInput))]
     public class PlayerMovementSystem : MonoBehaviour
     {
         [SerializeField] private float _speed = 5;
-        private IMovementService _movementService;
         private Vector3 _moveDirection;
-        private PlayerInput _input;
-        
-        public void SetMovementService(IMovementService movementService)
-        {
-            _movementService = movementService;
-        }
+        private PlayerMovementComponents _movementComponents;
+        private Rigidbody _rigidbody;
 
         private void Awake()
         {
-            _input = new PlayerInput();
-        }
-
-        private void OnEnable()
-        {
-            _input.Enable();
-        }
-
-        private void OnDisable()
-        {
-            _input.Disable();
+            IDeviceInput deviceInput = GetComponent<IDeviceInput>();
+            _movementComponents = new PlayerMovementComponents(new WalkMovementService(), deviceInput);
         }
 
         private void FixedUpdate()
         {
-            float x = _input.Movement.WASD.ReadValue<Vector2>().x;
-            float z = _input.Movement.WASD.ReadValue<Vector2>().y;
-            _moveDirection = new Vector3(x, 0, z);
+            Move();
+        }
 
-            _movementService.MoveGameObjectInDirectionWithSpeed(gameObject, _moveDirection, _speed);
+        private void Update()
+        {
+            float horizontalAxis = _movementComponents.DeviceInput.GetHorizontalAxis();
+            float verticalAxis = _movementComponents.DeviceInput.GetVerticalAxis();
+            
+            _moveDirection = new Vector3(horizontalAxis, 0, verticalAxis);
+        }
+
+        private void Move()
+        {
+            _movementComponents.MovementService.MoveForwardWithSpeed(gameObject, _moveDirection, _speed);
         }
     }
 }

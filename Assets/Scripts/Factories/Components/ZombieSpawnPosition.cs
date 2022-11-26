@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public readonly struct ZombieSpawnPosition
+namespace Factories.Components
 {
-    public readonly Transform Point;
-
-    public ZombieSpawnPosition(Transform point)
+    public readonly struct ZombieSpawnPosition
     {
-        Point = point;
+        public readonly Transform Point;
+
+        public ZombieSpawnPosition(Transform point)
+        {
+            Point = point;
+        }
     }
 }

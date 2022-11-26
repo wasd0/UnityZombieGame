@@ -23,7 +23,6 @@ namespace Factories
         protected override void InitializeMovementForEntity(Player player)
         {
             _diContainer.InstantiateComponent<PlayerMovementSystem>(player.gameObject);
-            player.GetComponent<PlayerMovementSystem>().SetMovementService(new WalkMovementService());
         }
     }
 }

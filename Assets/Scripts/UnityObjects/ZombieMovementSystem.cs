@@ -8,9 +8,9 @@ namespace UnityObjects
     {
         [SerializeField] private float _speed = 3;
         [SerializeField] private float _rotationSpeed = 2;
-        [SerializeField] private float _distanceToPlayer = 15;
-        [Inject] private Player _player;
-        
+        [SerializeField] private float _minDistanceToPlayer = 20;
+
+        private Player _player;
         private IMovementService _movementService;
         private readonly ZombieLook _zombieLook = new ZombieLook();
 
@@ -23,12 +23,18 @@ namespace UnityObjects
             }
         }
 
-        private void Update()
+        [Inject]
+        private void Construct(Player player)
         {
-            if (_player != null && DistanceToPlayer <= _distanceToPlayer)
+            _player = player;
+        }
+
+        private void FixedUpdate()
+        {
+            if (_player != null && DistanceToPlayer <= _minDistanceToPlayer)
             {
-                _movementService.MoveGameObjectInDirectionWithSpeed(gameObject, transform.forward, _speed);
-                _zombieLook.LookAtPositionWithSpeed(transform, _player.transform, _rotationSpeed);
+                _zombieLook.LookAtPositionWithSpeed(transform, _player.transform.position, _rotationSpeed);
+                _movementService.MoveForwardWithSpeed(gameObject, transform.forward, _speed);
             }
         }
 

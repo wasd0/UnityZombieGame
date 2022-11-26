@@ -18,6 +18,7 @@ namespace UnityObjects
         private void Update()
         {
             Follow();
+            transform.rotation = _target.rotation;
         }
 
         private void Follow()

@@ -1,3 +1,4 @@
+using System.Collections;
 using Factories;
 using UnityEngine;
 using Zenject;
@@ -6,22 +7,30 @@ namespace Infrastructure
 {
     public class SceneBootstrap : MonoBehaviour
     {
-        private PlayerFactory _playerFactory;
+        [SerializeField] private int _countZombieForSpawn;
+        [SerializeField] private float _spawnDelayInSeconds;
         private ZombieFactory _zombieFactory;
 
         [Inject]
         private void Construct(ZombieFactory zombieFactory, PlayerFactory playerFactory)
         {
             _zombieFactory = zombieFactory;
-            _playerFactory = playerFactory;
         }
 
-        private void Update()
+        private void Awake()
         {
-            if (Input.GetKeyUp(KeyCode.C))
+            StartCoroutine(SpawnZombies(_countZombieForSpawn, _spawnDelayInSeconds));
+        }
+
+        private IEnumerator SpawnZombies(int count, float delay)
+        {
+            int spawnedZombie = 0;
+            while (spawnedZombie < count)
+            {
+                yield return new WaitForSeconds(delay);
                 _zombieFactory.Create();
-            else if (Input.GetKeyUp(KeyCode.X))
-                _playerFactory.Create();
+                spawnedZombie = spawnedZombie + 1;
+            }
         }
     }
 }

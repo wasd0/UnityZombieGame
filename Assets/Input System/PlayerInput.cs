@@ -28,10 +28,19 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
             ""id"": ""d4d7df2e-a9b1-4eb0-8316-da0bcefa680b"",
             ""actions"": [
                 {
-                    ""name"": ""WASD"",
+                    ""name"": ""Keyboard"",
                     ""type"": ""Value"",
                     ""id"": ""f3c89235-ce34-4d9d-9700-a10e40d306aa"",
                     ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Mouse"",
+                    ""type"": ""Value"",
+                    ""id"": ""34a8733d-3dfe-425a-9aef-820e13be6334"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
@@ -45,7 +54,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""WASD"",
+                    ""action"": ""Keyboard"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -56,7 +65,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""WASD"",
+                    ""action"": ""Keyboard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -67,7 +76,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""WASD"",
+                    ""action"": ""Keyboard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -78,7 +87,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""WASD"",
+                    ""action"": ""Keyboard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -89,9 +98,20 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""WASD"",
+                    ""action"": ""Keyboard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7486c0c0-5a87-4eaa-92ff-943c50461c31"",
+                    ""path"": ""<Mouse>/delta/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -111,7 +131,8 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
 }");
         // Movement
         m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
-        m_Movement_WASD = m_Movement.FindAction("WASD", throwIfNotFound: true);
+        m_Movement_Keyboard = m_Movement.FindAction("Keyboard", throwIfNotFound: true);
+        m_Movement_Mouse = m_Movement.FindAction("Mouse", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -171,12 +192,14 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     // Movement
     private readonly InputActionMap m_Movement;
     private IMovementActions m_MovementActionsCallbackInterface;
-    private readonly InputAction m_Movement_WASD;
+    private readonly InputAction m_Movement_Keyboard;
+    private readonly InputAction m_Movement_Mouse;
     public struct MovementActions
     {
         private @PlayerInput m_Wrapper;
         public MovementActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @WASD => m_Wrapper.m_Movement_WASD;
+        public InputAction @Keyboard => m_Wrapper.m_Movement_Keyboard;
+        public InputAction @Mouse => m_Wrapper.m_Movement_Mouse;
         public InputActionMap Get() { return m_Wrapper.m_Movement; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -186,16 +209,22 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         {
             if (m_Wrapper.m_MovementActionsCallbackInterface != null)
             {
-                @WASD.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnWASD;
-                @WASD.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnWASD;
-                @WASD.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnWASD;
+                @Keyboard.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnKeyboard;
+                @Keyboard.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnKeyboard;
+                @Keyboard.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnKeyboard;
+                @Mouse.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMouse;
+                @Mouse.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMouse;
+                @Mouse.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMouse;
             }
             m_Wrapper.m_MovementActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @WASD.started += instance.OnWASD;
-                @WASD.performed += instance.OnWASD;
-                @WASD.canceled += instance.OnWASD;
+                @Keyboard.started += instance.OnKeyboard;
+                @Keyboard.performed += instance.OnKeyboard;
+                @Keyboard.canceled += instance.OnKeyboard;
+                @Mouse.started += instance.OnMouse;
+                @Mouse.performed += instance.OnMouse;
+                @Mouse.canceled += instance.OnMouse;
             }
         }
     }
@@ -220,6 +249,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     }
     public interface IMovementActions
     {
-        void OnWASD(InputAction.CallbackContext context);
+        void OnKeyboard(InputAction.CallbackContext context);
+        void OnMouse(InputAction.CallbackContext context);
     }
 }

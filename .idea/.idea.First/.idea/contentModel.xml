@@ -20,13 +20,21 @@
         </e>
         <e p="Scenes" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="DrawRayCast.cs" t="Include" />
           <e p="Entities" t="Include">
+            <e p="Components" t="Include">
+              <e p="PlayerMovementComponents.cs" t="Include" />
+              <e p="Weapon" t="Include">
+                <e p="IWeapon.cs" t="Include" />
+                <e p="Pistol.cs" t="Include" />
+              </e>
+            </e>
             <e p="Enemy" t="Include">
               <e p="Zombie.cs" t="Include" />
             </e>
+            <e p="IAttacker.cs" t="Include" />
             <e p="Neutral" t="Include">
               <e p="Entity.cs" t="Include" />
+              <e p="IDamageable.cs" t="Include" />
               <e p="Player.cs" t="Include" />
             </e>
           </e>
@@ -49,12 +57,17 @@
           </e>
           <e p="Services" t="Include">
             <e p="IMovementService.cs" t="Include" />
+            <e p="PlayerAttackHandler.cs" t="Include" />
             <e p="WalkMovementService.cs" t="Include" />
             <e p="ZombieLook.cs" t="Include" />
           </e>
           <e p="UnityObjects" t="Include">
             <e p="CameraFollower.cs" t="Include" />
+            <e p="DrawRayCast.cs" t="Include" />
+            <e p="IDeviceInput.cs" t="Include" />
+            <e p="KeyboardInput.cs" t="Include" />
             <e p="PlayerMovementSystem.cs" t="Include" />
+            <e p="PlayerRotate.cs" t="Include" />
             <e p="ZombieMovementSystem.cs" t="Include" />
           </e>
         </e>
