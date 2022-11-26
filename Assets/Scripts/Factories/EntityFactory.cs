@@ -1,3 +1,4 @@
+using Entities.Neutral;
 using UnityEngine;
 using Zenject;
 
@@ -17,7 +18,7 @@ namespace Factories
                 PrefabPath, SpawnPosition,
                 Quaternion.identity, null);
             InitializeMovementForEntity(entity);
-            entity.name = typeof(T).ToString();
+            entity.name = entity.gameObject.tag;
             return entity;
         }
 

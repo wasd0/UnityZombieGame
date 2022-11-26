@@ -1,9 +1,10 @@
 using System.Collections;
+using Entities;
 using Entities.Enemy;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Services
+namespace UnityObjects
 {
     [RequireComponent(typeof(Player))]
     public class PlayerAttackHandler : MonoBehaviour
@@ -33,7 +34,7 @@ namespace Services
 
         private void HandleHitToEnemy(RaycastHit hit)
         {
-            GameObject hited = hit.collider.gameObject; 
+            GameObject hited = hit.collider.gameObject;
             if (hited.CompareTag("Enemy"))
             {
                 hited.GetComponent<Zombie>().GetDamage(_player);

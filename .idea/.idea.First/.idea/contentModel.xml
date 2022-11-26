@@ -32,11 +32,11 @@
               <e p="Zombie.cs" t="Include" />
             </e>
             <e p="IAttacker.cs" t="Include" />
+            <e p="IDamageable.cs" t="Include" />
             <e p="Neutral" t="Include">
               <e p="Entity.cs" t="Include" />
-              <e p="IDamageable.cs" t="Include" />
-              <e p="Player.cs" t="Include" />
             </e>
+            <e p="Player.cs" t="Include" />
           </e>
           <e p="Factories" t="Include">
             <e p="Components" t="Include">
@@ -50,6 +50,7 @@
           </e>
           <e p="Infrastructure" t="Include">
             <e p="Installers" t="Include">
+              <e p="DontDestroyInstaller.cs" t="Include" />
               <e p="FactoryInstaller.cs" t="Include" />
               <e p="LocationInstaller.cs" t="Include" />
             </e>
@@ -57,15 +58,15 @@
           </e>
           <e p="Services" t="Include">
             <e p="IMovementService.cs" t="Include" />
-            <e p="PlayerAttackHandler.cs" t="Include" />
             <e p="WalkMovementService.cs" t="Include" />
             <e p="ZombieLook.cs" t="Include" />
           </e>
           <e p="UnityObjects" t="Include">
-            <e p="CameraFollower.cs" t="Include" />
+            <e p="CameraFollow.cs" t="Include" />
+            <e p="DeviceInput.cs" t="Include" />
             <e p="DrawRayCast.cs" t="Include" />
-            <e p="IDeviceInput.cs" t="Include" />
             <e p="KeyboardInput.cs" t="Include" />
+            <e p="PlayerAttackHandler.cs" t="Include" />
             <e p="PlayerMovementSystem.cs" t="Include" />
             <e p="PlayerRotate.cs" t="Include" />
             <e p="ZombieMovementSystem.cs" t="Include" />

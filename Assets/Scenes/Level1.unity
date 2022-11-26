@@ -1624,7 +1624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea5df74d02b842ae8e66c2ffafa12d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _countZombieForSpawn: 10
+  _countZombieForSpawn: 5
   _spawnDelayInSeconds: 3
 --- !u!4 &1502628616
 Transform:

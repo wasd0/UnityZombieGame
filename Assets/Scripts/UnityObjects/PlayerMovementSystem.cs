@@ -4,37 +4,51 @@ using UnityEngine;
 
 namespace UnityObjects
 {
-    [RequireComponent(typeof(IDeviceInput))]
+    [RequireComponent(typeof(DeviceInput))]
     public class PlayerMovementSystem : MonoBehaviour
     {
         [SerializeField] private float _speed = 5;
-        private Vector3 _moveDirection;
         private PlayerMovementComponents _movementComponents;
-        private Rigidbody _rigidbody;
+        private float _horizontalAxis;
+        private float _verticalAxis;
 
         private void Awake()
         {
-            IDeviceInput deviceInput = GetComponent<IDeviceInput>();
+            DeviceInput deviceInput = GetComponent<DeviceInput>();
             _movementComponents = new PlayerMovementComponents(new WalkMovementService(), deviceInput);
         }
 
         private void FixedUpdate()
         {
-            Move();
+            MoveHorizontal();
+            MoveVertical();
         }
 
         private void Update()
         {
-            float horizontalAxis = _movementComponents.DeviceInput.GetHorizontalAxis();
-            float verticalAxis = _movementComponents.DeviceInput.GetVerticalAxis();
-            
-            _moveDirection = new Vector3(horizontalAxis, 0, verticalAxis);
+            _horizontalAxis = _movementComponents.DeviceInput.GetHorizontalAxis();
+            _verticalAxis = _movementComponents.DeviceInput.GetVerticalAxis();
         }
 
-        private void Move()
+        private void MoveVertical()
         {
-            _movementComponents.MovementService.MoveForwardWithSpeed(gameObject, _moveDirection, _speed);
+            IMovementService _movement = _movementComponents.MovementService;
+
+            if (_verticalAxis > 0)
+                _movement.MoveForwardWithSpeed(gameObject, transform.forward, _speed);
+            else if (_verticalAxis < 0)
+                _movement.MoveForwardWithSpeed(gameObject, -transform.forward, _speed);
+        }
+
+        private void MoveHorizontal()
+        {
+            IMovementService _movement = _movementComponents.MovementService;
+            
+            
+            if (_horizontalAxis > 0)
+                _movement.MoveForwardWithSpeed(gameObject, transform.right, _speed);
+            else if (_horizontalAxis < 0)
+                _movement.MoveForwardWithSpeed(gameObject, -transform.right, _speed);
         }
     }
 }
-

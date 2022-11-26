@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace UnityObjects
 {
@@ -8,22 +7,18 @@ namespace UnityObjects
     {
         [SerializeField] private float _rotateSpeed;
         private float _mousePositionX;
-        private KeyboardInput _input;
+        private DeviceInput _input;
 
         private void Awake()
         {
-            _input = GetComponent<KeyboardInput>();
+            _input = GetComponent<DeviceInput>();
         }
-
+        
         private void FixedUpdate()
         {
-            RotateToMouse();
-        }
-
-        private void Update()
-        {
             _mousePositionX = _input.GetHorizontalRotation();
-            _mousePositionX = Mathf.Clamp(_mousePositionX, -90, 90);
+
+            RotateToMouse();
         }
 
         private void RotateToMouse()
