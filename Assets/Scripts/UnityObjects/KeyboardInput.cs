@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace UnityObjects
 {
@@ -16,11 +15,6 @@ namespace UnityObjects
         public override float GetHorizontalAxis()
         {
             return _input.Movement.Keyboard.ReadValue<Vector2>().x;
-        }
-
-        public override float GetHorizontalRotation()
-        {
-            return Mouse.current.position.ReadValue().x;
         }
     }
 }

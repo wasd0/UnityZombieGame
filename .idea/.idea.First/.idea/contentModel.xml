@@ -23,10 +23,6 @@
           <e p="Entities" t="Include">
             <e p="Components" t="Include">
               <e p="PlayerMovementComponents.cs" t="Include" />
-              <e p="Weapon" t="Include">
-                <e p="IWeapon.cs" t="Include" />
-                <e p="Pistol.cs" t="Include" />
-              </e>
             </e>
             <e p="Enemy" t="Include">
               <e p="Zombie.cs" t="Include" />
@@ -56,8 +52,15 @@
             </e>
             <e p="SceneBootstrap.cs" t="Include" />
           </e>
+          <e p="Items" t="Include">
+            <e p="Weapon" t="Include">
+              <e p="Pistol.cs" t="Include" />
+              <e p="Weapon.cs" t="Include" />
+            </e>
+          </e>
           <e p="Services" t="Include">
             <e p="IMovementService.cs" t="Include" />
+            <e p="MouseService.cs" t="Include" />
             <e p="WalkMovementService.cs" t="Include" />
             <e p="ZombieLook.cs" t="Include" />
           </e>
@@ -66,6 +69,7 @@
             <e p="DeviceInput.cs" t="Include" />
             <e p="DrawRayCast.cs" t="Include" />
             <e p="KeyboardInput.cs" t="Include" />
+            <e p="MouseHandler.cs" t="Include" />
             <e p="PlayerAttackHandler.cs" t="Include" />
             <e p="PlayerMovementSystem.cs" t="Include" />
             <e p="PlayerRotate.cs" t="Include" />

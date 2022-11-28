@@ -16,37 +16,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29bfe3ff-127f-44ba-8493-a4f6863fdf32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/IDamageable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/DeviceInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerAttackHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Main Camera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerMovementComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerMovementComponents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/Zombie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/Zombie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/Weapon.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Weapon.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/Weapon/IWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Weapon/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/Weapon/IWeapon.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Weapon/Weapon.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/Weapon/Pistol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Weapon/Pistol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/Weapon/Pistol.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Items/Weapon/Pistol.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/IAttacker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/IAttacker.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/IDamageable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/IDamageable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/IDamageable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/Player.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PlayerAttackHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PlayerAttackHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerAttackHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/CameraFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/CameraFollower.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/CameraFollow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/IDeviceInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/IDeviceInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/DeviceInput.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/DontDestroyInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/DontDestroyInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/DeviceInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/DeviceInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/KeyboardInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/KeyboardInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerMovementSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerAttackHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerAttackHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerRotate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerRotate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/ZombieMovementSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnityObjects/ZombieMovementSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/ZombieInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/CameraFollower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Unity Objects/ZombieMovementSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Source/Runtime/Factories/IFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LocationInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerSpawnPosition.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/FactoryInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/ZombieInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/MovementSystem.cs" />
@@ -99,29 +79,36 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerMovementComponents.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerShooting.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/MouseHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/IAttacker.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/Weapon/Pistol.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/Weapon/IWeapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/PlayerAttackHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerAttackHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/Zombie.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/IDeviceInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/CameraFollower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/DeviceInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/KeyboardInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/ZombieMovementSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerMovementSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/IDamageable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/IDamageable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/Entity.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/DontDestroyInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Weapon/IWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Weapon/Pistol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/Entity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/AttackHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Items/Weapon/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerRotate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/DontDestroyInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/MouseHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/PlayerAttackHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/KeyboardInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/MouseHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/MouseService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UnityObjects/DeviceInput.cs" />
       </list>
     </option>
   </component>
@@ -209,6 +196,9 @@
       <workItem from="1669407257823" duration="16056000" />
       <workItem from="1669482084789" duration="12579000" />
       <workItem from="1669497805644" duration="204000" />
+      <workItem from="1669578868166" duration="412000" />
+      <workItem from="1669590416056" duration="1233000" />
+      <workItem from="1669619139487" duration="8368000" />
     </task>
     <servers />
   </component>
@@ -322,17 +312,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="151" y="42" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1667556987117" />
-    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1668647516784">
+    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog" timestamp="1669629838317">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1668647516784" />
+    <state x="93" y="93" width="1350" height="678" key="VCS.FileHistoryDialog/0.0.1536.864@0.0.1536.864" timestamp="1669629838317" />
     <state x="304" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1668639165656">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="304" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1668639165656" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1669422231882">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1669629173816">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1669422231882" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1669629173816" />
   </component>
 </project>

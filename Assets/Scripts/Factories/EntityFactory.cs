@@ -14,7 +14,7 @@ namespace Factories
 
         public T Create()
         {
-            var entity = _diContainer.InstantiatePrefabResourceForComponent<T>(
+                var entity = _diContainer.InstantiatePrefabResourceForComponent<T>(
                 PrefabPath, SpawnPosition,
                 Quaternion.identity, null);
             InitializeMovementForEntity(entity);

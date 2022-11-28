@@ -25,7 +25,7 @@ namespace Entities.Neutral
         public void GetDamage(IAttacker attacker)
         {
             Health -= attacker.Weapon.Damage;
-            Debug.Log($"{name} got damage: {attacker.Weapon.Damage}");
+            Debug.Log($"{name}: {Health}");
         }
 
         private void OnEnable()

@@ -1,3 +1,5 @@
+using Services;
+using UnityObjects;
 using Zenject;
 
 namespace Infrastructure.Installers
@@ -6,10 +8,20 @@ namespace Infrastructure.Installers
     {
         public override void InstallBindings()
         {
-            BindInput();
+            BindPlayerInput();
+            BindMouseHandler();
         }
 
-        private void BindInput()
+        private void BindMouseHandler()
+        {
+            Container.
+                Bind<MouseService>().
+                FromNew().
+                AsSingle().
+                NonLazy();
+        }
+
+        private void BindPlayerInput()
         {
             Container.
                 Bind<PlayerInput>().

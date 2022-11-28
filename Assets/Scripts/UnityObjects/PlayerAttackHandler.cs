@@ -1,8 +1,9 @@
 using System.Collections;
 using Entities;
 using Entities.Enemy;
+using Services;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using Zenject;
 
 namespace UnityObjects
 {
@@ -10,46 +11,60 @@ namespace UnityObjects
     public class PlayerAttackHandler : MonoBehaviour
     {
         private Player _player;
-        private bool _weaponOnReaload;
+        private bool _isCooldownActive;
+        private MouseService _mouseService;
+
+        [Inject]
+        private void Construct(MouseService mouseService)
+        {
+            _mouseService = mouseService;
+        }
 
         private void Awake()
         {
             _player = GetComponent<Player>();
         }
 
-        private void Update()
+        private void AttackZombies()
         {
-            RaycastHit ray;
+            bool isHit = TryGetHitToObject(out var ray);
+            if (!_isCooldownActive && isHit)
+            {
+                HandleHitToZombie(ray);
+                StartCoroutine(WaitForCooldown());
+            }
+        }
+
+        private bool TryGetHitToObject(out RaycastHit hit)
+        {
             Transform playerTransform = _player.transform;
-            //TODO: Change shooting system and logic
-            bool isHit = Physics.Raycast(playerTransform.position, playerTransform.forward, out ray,
+            return Physics.Raycast(playerTransform.position, playerTransform.forward, out hit,
                 _player.Weapon.Range);
-            if (MouseIsPressed() && !_weaponOnReaload && isHit)
+        }
+
+        private void HandleHitToZombie(in RaycastHit hit)
+        {
+            if (hit.collider.CompareTag("Enemy"))
             {
-                HandleHitToEnemy(ray);
-                _weaponOnReaload = true;
-                StartCoroutine(ReloadWeapon());
+                hit.collider.GetComponent<Zombie>().GetDamage(_player);
             }
         }
 
-        private void HandleHitToEnemy(RaycastHit hit)
+        private IEnumerator WaitForCooldown()
         {
-            GameObject hited = hit.collider.gameObject;
-            if (hited.CompareTag("Enemy"))
-            {
-                hited.GetComponent<Zombie>().GetDamage(_player);
-            }
+            _isCooldownActive = true;
+            yield return new WaitForSeconds(_player.Weapon.CooldownAttack);
+            _isCooldownActive = false;
         }
 
-        private bool MouseIsPressed()
+        private void OnEnable()
         {
-            return Mouse.current.press.ReadValue() > 0;
+            _mouseService.OnMousePressed += AttackZombies;
         }
 
-        private IEnumerator ReloadWeapon()
+        private void OnDisable()
         {
-            yield return new WaitForSeconds(_player.Weapon.DelayInSeconds);
-            _weaponOnReaload = false;
+            _mouseService.OnMousePressed -= AttackZombies;
         }
     }
 }

@@ -1,22 +1,24 @@
+using Services;
 using UnityEngine;
+using Zenject;
 
 namespace UnityObjects
 {
-    [RequireComponent(typeof(KeyboardInput))]
     public class PlayerRotate : MonoBehaviour
     {
         [SerializeField] private float _rotateSpeed;
         private float _mousePositionX;
-        private DeviceInput _input;
+        private MouseService _mouseService;
 
-        private void Awake()
+        [Inject]
+        private void Construct(MouseService mouseService)
         {
-            _input = GetComponent<DeviceInput>();
+            _mouseService = mouseService;
         }
         
         private void FixedUpdate()
         {
-            _mousePositionX = _input.GetHorizontalRotation();
+            _mousePositionX = _mouseService.GetHorizontalAxis();
 
             RotateToMouse();
         }

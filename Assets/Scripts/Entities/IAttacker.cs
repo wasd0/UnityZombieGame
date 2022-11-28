@@ -1,9 +1,9 @@
-using Entities.Components.Weapon;
+using Items.Weapon;
 
 namespace Entities
 {
     public interface IAttacker
     {
-        public IWeapon Weapon { get; }
+        public Weapon Weapon { get; }
     }
 }

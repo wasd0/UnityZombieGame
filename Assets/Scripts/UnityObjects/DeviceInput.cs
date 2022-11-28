@@ -9,7 +9,6 @@ namespace UnityObjects
 
         public abstract float GetVerticalAxis();
         public abstract float GetHorizontalAxis();
-        public abstract float GetHorizontalRotation();
 
         [Inject]
         private void Construct(PlayerInput input)
