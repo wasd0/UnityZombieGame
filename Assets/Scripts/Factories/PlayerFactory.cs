@@ -11,11 +11,10 @@ namespace Factories
     {
         private const string PLAYER_PATH = "Prefabs/Player";
         
-        protected override Vector3 SpawnPosition { get; set; }
-        protected override string PrefabPath { get; set; }
+        protected override Vector3 SpawnPosition { get; }
+        protected override string PrefabPath { get; }
         
-        [Inject]
-        private void Construct(PlayerSpawnPosition playerSpawnPosition)
+        private PlayerFactory(PlayerSpawnPosition playerSpawnPosition)
         {
             SpawnPosition = playerSpawnPosition.PointTransform.position;
             PrefabPath = PLAYER_PATH;

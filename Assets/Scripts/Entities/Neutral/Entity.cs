@@ -20,22 +20,29 @@ namespace Entities.Neutral
         }
 
         public event Action OnHealthChanged;
+        public event Action<IAttacker> OnGetDamage;
         public event Action OnDead;
 
-        public void GetDamage(IAttacker attacker)
+        public void ApproveDamage(IAttacker attacker)
         {
-            Health -= attacker.Weapon.Damage;
-            Debug.Log($"{name}: {Health}");
+            OnGetDamage?.Invoke(attacker);
+        }
+
+        private void GotDamage(IAttacker source)
+        {
+            Health -= source.Damage;
         }
 
         private void OnEnable()
         {
             OnDead += Die;
+            OnGetDamage += GotDamage;
         }
 
         private void OnDisable()
         {
             OnDead -= Die;
+            OnGetDamage -= GotDamage;
         }
 
         private void Die()

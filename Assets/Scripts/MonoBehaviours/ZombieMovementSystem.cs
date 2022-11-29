@@ -35,7 +35,7 @@ namespace UnityObjects
             if (_player != null && DistanceToPlayer <= _minDistanceToPlayer)
             {
                 _zombieLook.LookAtPositionWithSpeed(transform, _player.transform.position, _rotationSpeed);
-                _movementService.MoveForwardWithSpeed(gameObject, transform.forward, _speed);
+                _movementService.MoveWithSpeed(gameObject, transform.forward, _speed);
             }
         }
 

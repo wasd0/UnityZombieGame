@@ -35,9 +35,9 @@ namespace UnityObjects
             IMovementService _movement = _movementComponents.MovementService;
 
             if (_verticalAxis > 0)
-                _movement.MoveForwardWithSpeed(gameObject, transform.forward, _speed);
+                _movement.MoveWithSpeed(gameObject, transform.forward, _speed);
             else if (_verticalAxis < 0)
-                _movement.MoveForwardWithSpeed(gameObject, -transform.forward, _speed);
+                _movement.MoveWithSpeed(gameObject, -transform.forward, _speed);
         }
 
         private void MoveHorizontal()
@@ -46,9 +46,9 @@ namespace UnityObjects
             
             
             if (_horizontalAxis > 0)
-                _movement.MoveForwardWithSpeed(gameObject, transform.right, _speed);
+                _movement.MoveWithSpeed(gameObject, transform.right, _speed);
             else if (_horizontalAxis < 0)
-                _movement.MoveForwardWithSpeed(gameObject, -transform.right, _speed);
+                _movement.MoveWithSpeed(gameObject, -transform.right, _speed);
         }
     }
 }

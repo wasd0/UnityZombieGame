@@ -4,6 +4,6 @@ namespace Entities
 {
     public interface IAttacker
     {
-        public Weapon Weapon { get; }
+        public float Damage { get; }
     }
 }

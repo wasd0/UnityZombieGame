@@ -36,7 +36,6 @@
           </e>
           <e p="Factories" t="Include">
             <e p="Components" t="Include">
-              <e p="EnemyMarker.cs" t="Include" />
               <e p="PlayerSpawnPosition.cs" t="Include" />
               <e p="ZombieSpawnPosition.cs" t="Include" />
             </e>
@@ -58,22 +57,24 @@
               <e p="Weapon.cs" t="Include" />
             </e>
           </e>
-          <e p="Services" t="Include">
-            <e p="IMovementService.cs" t="Include" />
-            <e p="MouseService.cs" t="Include" />
-            <e p="WalkMovementService.cs" t="Include" />
-            <e p="ZombieLook.cs" t="Include" />
-          </e>
-          <e p="UnityObjects" t="Include">
+          <e p="Monobehaviours" t="Include">
             <e p="CameraFollow.cs" t="Include" />
             <e p="DeviceInput.cs" t="Include" />
             <e p="DrawRayCast.cs" t="Include" />
+            <e p="EnemyMarker.cs" t="Include" />
             <e p="KeyboardInput.cs" t="Include" />
             <e p="MouseHandler.cs" t="Include" />
             <e p="PlayerAttackHandler.cs" t="Include" />
             <e p="PlayerMovementSystem.cs" t="Include" />
             <e p="PlayerRotate.cs" t="Include" />
             <e p="ZombieMovementSystem.cs" t="Include" />
+          </e>
+          <e p="Services" t="Include">
+            <e p="IMovementService.cs" t="Include" />
+            <e p="MouseService.cs" t="Include" />
+            <e p="OneClickService.cs" t="Include" />
+            <e p="WalkMovementService.cs" t="Include" />
+            <e p="ZombieLook.cs" t="Include" />
           </e>
         </e>
         <e p="Source" t="Include">

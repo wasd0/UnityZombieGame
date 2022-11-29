@@ -1,11 +1,10 @@
 using System.Collections;
 using Entities;
-using Entities.Enemy;
 using Services;
 using UnityEngine;
 using Zenject;
 
-namespace UnityObjects
+namespace MonoBehaviours
 {
     [RequireComponent(typeof(Player))]
     public class PlayerAttackHandler : MonoBehaviour
@@ -25,29 +24,28 @@ namespace UnityObjects
             _player = GetComponent<Player>();
         }
 
-        private void AttackZombies()
+        private void Attack()
         {
-            bool isHit = TryGetHitToObject(out var ray);
+            bool isHit = TryGetHit(out var ray);
             if (!_isCooldownActive && isHit)
             {
-                HandleHitToZombie(ray);
+                SentDamage(ray);
                 StartCoroutine(WaitForCooldown());
             }
         }
 
-        private bool TryGetHitToObject(out RaycastHit hit)
+        private bool TryGetHit(out RaycastHit hit)
         {
             Transform playerTransform = _player.transform;
             return Physics.Raycast(playerTransform.position, playerTransform.forward, out hit,
                 _player.Weapon.Range);
         }
 
-        private void HandleHitToZombie(in RaycastHit hit)
+        private void SentDamage(in RaycastHit hit)
         {
-            if (hit.collider.CompareTag("Enemy"))
-            {
-                hit.collider.GetComponent<Zombie>().GetDamage(_player);
-            }
+            var damageable = hit.collider.GetComponent<IDamageable>();
+
+            damageable?.ApproveDamage(_player);
         }
 
         private IEnumerator WaitForCooldown()
@@ -59,12 +57,12 @@ namespace UnityObjects
 
         private void OnEnable()
         {
-            _mouseService.OnMousePressed += AttackZombies;
+            _mouseService.OnClicked += Attack;
         }
 
         private void OnDisable()
         {
-            _mouseService.OnMousePressed -= AttackZombies;
+            _mouseService.OnClicked -= Attack;
         }
     }
 }

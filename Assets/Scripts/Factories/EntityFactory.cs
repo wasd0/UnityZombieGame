@@ -9,8 +9,8 @@ namespace Factories
     {
         [Inject] protected readonly DiContainer _diContainer;
         
-        protected abstract Vector3 SpawnPosition { get; set; }
-        protected abstract string PrefabPath { get; set; }
+        protected abstract Vector3 SpawnPosition { get; }
+        protected abstract string PrefabPath { get; }
 
         public T Create()
         {

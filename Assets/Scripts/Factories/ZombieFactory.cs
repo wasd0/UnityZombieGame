@@ -11,11 +11,10 @@ namespace Factories
     {
         private const string ZOMBIE_PATH = "Prefabs/Zombie";
         
-        protected override Vector3 SpawnPosition { get; set; }
-        protected override string PrefabPath { get; set; }
+        protected override Vector3 SpawnPosition { get; }
+        protected override string PrefabPath { get; }
         
-        [Inject]
-        private void Construct(ZombieSpawnPosition zombieSpawnPosition)
+        private ZombieFactory(ZombieSpawnPosition zombieSpawnPosition)
         {
             SpawnPosition = zombieSpawnPosition.Point.position;
             PrefabPath = ZOMBIE_PATH;

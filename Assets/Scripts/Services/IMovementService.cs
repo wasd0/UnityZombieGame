@@ -4,6 +4,6 @@ namespace Services
 {
     public interface IMovementService
     {
-        public void MoveForwardWithSpeed(GameObject gameObject, Vector3 direction, float speed);
+        public void MoveWithSpeed(GameObject gameObject, Vector3 direction, float speed);
     }
 }

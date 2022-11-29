@@ -5,8 +5,9 @@ namespace Entities
     public interface IDamageable
     {
         public event Action OnHealthChanged;
+        public event Action<IAttacker> OnGetDamage;
         public event Action OnDead;
 
-        public void GetDamage(IAttacker attacker);
+        public void ApproveDamage(IAttacker attacker);
     }
 }

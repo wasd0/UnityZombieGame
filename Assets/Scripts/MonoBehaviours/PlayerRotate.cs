@@ -2,23 +2,23 @@ using Services;
 using UnityEngine;
 using Zenject;
 
-namespace UnityObjects
+namespace MonoBehaviours
 {
     public class PlayerRotate : MonoBehaviour
     {
         [SerializeField] private float _rotateSpeed;
         private float _mousePositionX;
-        private MouseService _mouseService;
+        private OneClickService _clickService;
 
         [Inject]
         private void Construct(MouseService mouseService)
         {
-            _mouseService = mouseService;
+            _clickService = mouseService;
         }
         
         private void FixedUpdate()
         {
-            _mousePositionX = _mouseService.GetHorizontalAxis();
+            _mousePositionX = _clickService.GetHorizontalAxis();
 
             RotateToMouse();
         }

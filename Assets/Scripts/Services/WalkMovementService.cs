@@ -4,10 +4,10 @@ namespace Services
 {
     public class WalkMovementService : IMovementService
     {
-        public void MoveForwardWithSpeed(GameObject gameObject, Vector3 direction, float speed)
+        public void MoveWithSpeed(GameObject gameObject, Vector3 direction, float speed)
         {
-            float fixedSpeed = speed * Time.deltaTime;
-            gameObject.transform.localPosition += direction * fixedSpeed;
+            float relativeSpeed = speed * Time.deltaTime;
+            gameObject.transform.localPosition += direction * relativeSpeed;
         }
     }
 }
