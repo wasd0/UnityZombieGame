@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityObjects
+namespace MonoBehaviours
 {
     public class KeyboardInput : DeviceInput
     {
@@ -9,12 +9,12 @@ namespace UnityObjects
             
         public override float GetVerticalAxis()
         {
-            return _input.Movement.Keyboard.ReadValue<Vector2>().y;
+            return _input.Player.Keyboard.ReadValue<Vector2>().y;
         }
         
         public override float GetHorizontalAxis()
         {
-            return _input.Movement.Keyboard.ReadValue<Vector2>().x;
+            return _input.Player.Keyboard.ReadValue<Vector2>().x;
         }
     }
 }

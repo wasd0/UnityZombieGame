@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UnityObjects
+namespace MonoBehaviours
 {
     public class DrawRayCast : MonoBehaviour
     {
@@ -8,7 +8,7 @@ namespace UnityObjects
 
         void Update()
         {
-            Debug.DrawRay(transform.localPosition, transform.forward * _distance, Color.red);
+            Debug.DrawRay(transform.localPosition, transform.forward * _distance, color: Color.red);
         }
     }
 }

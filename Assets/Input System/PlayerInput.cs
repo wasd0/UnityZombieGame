@@ -24,7 +24,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     ""name"": ""PlayerInput"",
     ""maps"": [
         {
-            ""name"": ""Movement"",
+            ""name"": ""Player"",
             ""id"": ""d4d7df2e-a9b1-4eb0-8316-da0bcefa680b"",
             ""actions"": [
                 {
@@ -37,9 +37,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Mouse"",
+                    ""name"": ""Look"",
                     ""type"": ""Value"",
-                    ""id"": ""34a8733d-3dfe-425a-9aef-820e13be6334"",
+                    ""id"": ""949f50c3-1f77-4718-bbed-01fa12fdc87a"",
                     ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -104,12 +104,12 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""7486c0c0-5a87-4eaa-92ff-943c50461c31"",
+                    ""id"": ""d4b128ca-77a4-4b4f-9962-6aa3dd78c6c1"",
                     ""path"": ""<Mouse>/delta/x"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Mouse"",
+                    ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -129,10 +129,10 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         }
     ]
 }");
-        // Movement
-        m_Movement = asset.FindActionMap("Movement", throwIfNotFound: true);
-        m_Movement_Keyboard = m_Movement.FindAction("Keyboard", throwIfNotFound: true);
-        m_Movement_Mouse = m_Movement.FindAction("Mouse", throwIfNotFound: true);
+        // Player
+        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+        m_Player_Keyboard = m_Player.FindAction("Keyboard", throwIfNotFound: true);
+        m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -189,46 +189,46 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Movement
-    private readonly InputActionMap m_Movement;
-    private IMovementActions m_MovementActionsCallbackInterface;
-    private readonly InputAction m_Movement_Keyboard;
-    private readonly InputAction m_Movement_Mouse;
-    public struct MovementActions
+    // Player
+    private readonly InputActionMap m_Player;
+    private IPlayerActions m_PlayerActionsCallbackInterface;
+    private readonly InputAction m_Player_Keyboard;
+    private readonly InputAction m_Player_Look;
+    public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
-        public MovementActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Keyboard => m_Wrapper.m_Movement_Keyboard;
-        public InputAction @Mouse => m_Wrapper.m_Movement_Mouse;
-        public InputActionMap Get() { return m_Wrapper.m_Movement; }
+        public PlayerActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Keyboard => m_Wrapper.m_Player_Keyboard;
+        public InputAction @Look => m_Wrapper.m_Player_Look;
+        public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(MovementActions set) { return set.Get(); }
-        public void SetCallbacks(IMovementActions instance)
+        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
+        public void SetCallbacks(IPlayerActions instance)
         {
-            if (m_Wrapper.m_MovementActionsCallbackInterface != null)
+            if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
             {
-                @Keyboard.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnKeyboard;
-                @Keyboard.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnKeyboard;
-                @Keyboard.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnKeyboard;
-                @Mouse.started -= m_Wrapper.m_MovementActionsCallbackInterface.OnMouse;
-                @Mouse.performed -= m_Wrapper.m_MovementActionsCallbackInterface.OnMouse;
-                @Mouse.canceled -= m_Wrapper.m_MovementActionsCallbackInterface.OnMouse;
+                @Keyboard.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnKeyboard;
+                @Keyboard.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnKeyboard;
+                @Keyboard.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnKeyboard;
+                @Look.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
             }
-            m_Wrapper.m_MovementActionsCallbackInterface = instance;
+            m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @Keyboard.started += instance.OnKeyboard;
                 @Keyboard.performed += instance.OnKeyboard;
                 @Keyboard.canceled += instance.OnKeyboard;
-                @Mouse.started += instance.OnMouse;
-                @Mouse.performed += instance.OnMouse;
-                @Mouse.canceled += instance.OnMouse;
+                @Look.started += instance.OnLook;
+                @Look.performed += instance.OnLook;
+                @Look.canceled += instance.OnLook;
             }
         }
     }
-    public MovementActions @Movement => new MovementActions(this);
+    public PlayerActions @Player => new PlayerActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -247,9 +247,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_TouchscreenSchemeIndex];
         }
     }
-    public interface IMovementActions
+    public interface IPlayerActions
     {
         void OnKeyboard(InputAction.CallbackContext context);
-        void OnMouse(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
     }
 }

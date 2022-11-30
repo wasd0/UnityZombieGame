@@ -1,11 +1,20 @@
 using System;
 using UnityEngine.InputSystem;
+using Zenject;
 
 namespace Services
 {
-    public abstract class OneClickService
+    public abstract class LookService
     {
         public event Action OnClicked;
+        
+        protected PlayerInput Input { get; private set; }
+
+        [Inject]
+        private void Construct(PlayerInput input)
+        {
+            Input = input;
+        }
         
         public void HandleClick()
         {

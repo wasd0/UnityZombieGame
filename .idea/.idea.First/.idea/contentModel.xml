@@ -15,7 +15,9 @@
         </e>
         <e p="Resources" t="Include">
           <e p="Materials" t="Include" />
-          <e p="Prefabs" t="Include" />
+          <e p="Prefabs" t="Include">
+            <e p="UI" t="Include" />
+          </e>
           <e p="Terrain" t="Include" />
         </e>
         <e p="Scenes" t="Include" />
@@ -62,17 +64,22 @@
             <e p="DeviceInput.cs" t="Include" />
             <e p="DrawRayCast.cs" t="Include" />
             <e p="EnemyMarker.cs" t="Include" />
+            <e p="EntityMovementSystem.cs" t="Include" />
             <e p="KeyboardInput.cs" t="Include" />
             <e p="MouseHandler.cs" t="Include" />
             <e p="PlayerAttackHandler.cs" t="Include" />
             <e p="PlayerMovementSystem.cs" t="Include" />
-            <e p="PlayerRotate.cs" t="Include" />
+            <e p="PlayerRotateWithMouse.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="Billboard.cs" t="Include" />
+              <e p="HealthBarUI.cs" t="Include" />
+            </e>
             <e p="ZombieMovementSystem.cs" t="Include" />
           </e>
           <e p="Services" t="Include">
             <e p="IMovementService.cs" t="Include" />
+            <e p="LookService.cs" t="Include" />
             <e p="MouseService.cs" t="Include" />
-            <e p="OneClickService.cs" t="Include" />
             <e p="WalkMovementService.cs" t="Include" />
             <e p="ZombieLook.cs" t="Include" />
           </e>
@@ -527,6 +534,42 @@
           </e>
           <e p="Usage" t="Include">
             <e p="link.xml" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Documentation" t="Include" />
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="Fonts &amp; Materials" t="Include" />
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Sprite Assets" t="Include" />
+            <e p="Style Sheets" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
           </e>
         </e>
       </e>

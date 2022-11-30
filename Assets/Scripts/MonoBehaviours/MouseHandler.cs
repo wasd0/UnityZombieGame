@@ -2,7 +2,7 @@ using Services;
 using UnityEngine;
 using Zenject;
 
-namespace UnityObjects
+namespace MonoBehaviours
 {
     public class MouseHandler : MonoBehaviour
     {
@@ -12,6 +12,7 @@ namespace UnityObjects
         private void Construct(MouseService mouseService)
         {
             _mouseService = mouseService;
+            Cursor.lockState = CursorLockMode.Locked;
         }
 
         private void Update()

@@ -3,7 +3,7 @@ using Services;
 using UnityEngine;
 using Zenject;
 
-namespace UnityObjects
+namespace MonoBehaviours
 {
     public class ZombieMovementSystem : MonoBehaviour
     {
@@ -12,7 +12,6 @@ namespace UnityObjects
         [SerializeField] private float _minDistanceToPlayer = 20;
 
         private Player _player;
-        private IMovementService _movementService;
         private readonly ZombieLook _zombieLook = new ZombieLook();
 
         private float DistanceToPlayer
@@ -30,18 +29,25 @@ namespace UnityObjects
             _player = player;
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
-            if (_player != null && DistanceToPlayer <= _minDistanceToPlayer)
+            if (TryFindPlayer())
             {
-                _zombieLook.LookAtPositionWithSpeed(transform, _player.transform.position, _rotationSpeed);
-                _movementService.MoveWithSpeed(gameObject, transform.forward, _speed);
+                MoveToPlayer();
             }
         }
 
-        public void SetMovementService(IMovementService movementService)
+        private void MoveToPlayer()
         {
-            _movementService = movementService;
+            float relativeSpeed = _speed * Time.deltaTime;
+            
+            _zombieLook.LookAtPositionWithSpeed(transform, _player.transform.position, _rotationSpeed);
+            transform.position += transform.forward * relativeSpeed;
+        }
+
+        private bool TryFindPlayer()
+        {
+            return _player != null && DistanceToPlayer <= _minDistanceToPlayer;
         }
     }
 }

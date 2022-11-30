@@ -1,9 +1,6 @@
 using Entities.Enemy;
 using Factories.Components;
-using Services;
 using UnityEngine;
-using UnityObjects;
-using Zenject;
 
 namespace Factories
 {
@@ -18,12 +15,6 @@ namespace Factories
         {
             SpawnPosition = zombieSpawnPosition.Point.position;
             PrefabPath = ZOMBIE_PATH;
-        }
-
-        protected override void InitializeMovementForEntity(Zombie zombie)
-        {
-            _diContainer.InstantiateComponent<ZombieMovementSystem>(zombie.gameObject);
-            zombie.GetComponent<ZombieMovementSystem>().SetMovementService(new WalkMovementService());
         }
     }
 }

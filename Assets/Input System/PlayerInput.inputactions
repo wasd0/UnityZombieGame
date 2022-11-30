@@ -2,7 +2,7 @@
     "name": "PlayerInput",
     "maps": [
         {
-            "name": "Movement",
+            "name": "Player",
             "id": "d4d7df2e-a9b1-4eb0-8316-da0bcefa680b",
             "actions": [
                 {
@@ -15,9 +15,9 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Mouse",
+                    "name": "Look",
                     "type": "Value",
-                    "id": "34a8733d-3dfe-425a-9aef-820e13be6334",
+                    "id": "949f50c3-1f77-4718-bbed-01fa12fdc87a",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
@@ -82,12 +82,12 @@
                 },
                 {
                     "name": "",
-                    "id": "7486c0c0-5a87-4eaa-92ff-943c50461c31",
+                    "id": "d4b128ca-77a4-4b4f-9962-6aa3dd78c6c1",
                     "path": "<Mouse>/delta/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Mouse",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

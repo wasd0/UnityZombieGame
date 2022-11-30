@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace UnityObjects
+namespace MonoBehaviours
 {
     public abstract  class DeviceInput : MonoBehaviour
     {

@@ -8,20 +8,17 @@ namespace Factories
         where T : Entity
     {
         [Inject] protected readonly DiContainer _diContainer;
-        
+
         protected abstract Vector3 SpawnPosition { get; }
         protected abstract string PrefabPath { get; }
 
         public T Create()
         {
-                var entity = _diContainer.InstantiatePrefabResourceForComponent<T>(
+            var entity = _diContainer.InstantiatePrefabResourceForComponent<T>(
                 PrefabPath, SpawnPosition,
                 Quaternion.identity, null);
-            InitializeMovementForEntity(entity);
             entity.name = entity.gameObject.tag;
             return entity;
         }
-
-        protected abstract void InitializeMovementForEntity(T entity);
     }
 }

@@ -1,8 +1,8 @@
 using Entities;
 using Factories.Components;
+using MonoBehaviours;
 using Services;
 using UnityEngine;
-using UnityObjects;
 using Zenject;
 
 namespace Factories
@@ -18,11 +18,6 @@ namespace Factories
         {
             SpawnPosition = playerSpawnPosition.PointTransform.position;
             PrefabPath = PLAYER_PATH;
-        }
-
-        protected override void InitializeMovementForEntity(Player player)
-        {
-            _diContainer.InstantiateComponent<PlayerMovementSystem>(player.gameObject);
         }
     }
 }

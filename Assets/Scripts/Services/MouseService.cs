@@ -1,12 +1,10 @@
-using UnityEngine.InputSystem;
-
 namespace Services
 {
-    public class MouseService : OneClickService
+    public class MouseService : LookService
     {
         public override float GetHorizontalAxis()
         {
-            return Mouse.current.position.ReadValue().x;
+            return Input.Player.Look.ReadValue<float>();
         }
     }
 }

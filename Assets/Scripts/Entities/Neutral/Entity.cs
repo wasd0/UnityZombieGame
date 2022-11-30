@@ -7,17 +7,19 @@ namespace Entities.Neutral
     {
         [SerializeField] private float _health;
 
-        private float Health
+        public float Health
         {
             get => _health;
-            set
+            private set
             {
-                _health = Mathf.Clamp(value, 0, 100);
+                _health = Mathf.Clamp(value, 0, MaxHealth);
                 OnHealthChanged?.Invoke();
                 if (_health <= 0)
                     OnDead?.Invoke();
             }
         }
+
+        public float MaxHealth { get; } = 100;
 
         public event Action OnHealthChanged;
         public event Action<IAttacker> OnGetDamage;

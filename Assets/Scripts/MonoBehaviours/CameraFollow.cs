@@ -2,7 +2,7 @@ using Entities;
 using UnityEngine;
 using Zenject;
 
-namespace UnityObjects
+namespace MonoBehaviours
 {
     public class CameraFollow : MonoBehaviour
     {

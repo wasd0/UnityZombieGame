@@ -2,9 +2,9 @@ using Entities;
 using Entities.Enemy;
 using Factories;
 using Factories.Components;
+using MonoBehaviours;
 using Services;
 using UnityEngine;
-using UnityObjects;
 using Zenject;
 
 namespace Infrastructure.Installers
@@ -13,11 +13,13 @@ namespace Infrastructure.Installers
     {
         [SerializeField] private Transform _playerSpawnPosition;
         [SerializeField] private Transform _zombieSpawnPosition;
+        [SerializeField] private CameraFollow _camera;
 
         public override void InstallBindings()
         {
             BindPlayerSpawnPosition();
             BindZombieSpawnPosition();
+            BindCamera();
             BindPlayer();
             BindZombie();
         }
@@ -52,6 +54,14 @@ namespace Infrastructure.Installers
                 FromFactory<ZombieFactory>().
                 AsSingle().
                 NonLazy();
+        }
+
+        private void BindCamera()
+        {
+            Container.
+                Bind<CameraFollow>().
+                FromInstance(_camera).
+                AsSingle().NonLazy();
         }
     }
 }
