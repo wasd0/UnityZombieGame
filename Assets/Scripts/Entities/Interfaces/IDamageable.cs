@@ -1,6 +1,6 @@
 using System;
 
-namespace Entities
+namespace Entities.Interfaces
 {
     public interface IDamageable
     {

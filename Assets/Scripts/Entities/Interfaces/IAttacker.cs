@@ -1,6 +1,4 @@
-using Items.Weapon;
-
-namespace Entities
+namespace Entities.Interfaces
 {
     public interface IAttacker
     {

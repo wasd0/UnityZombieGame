@@ -3,7 +3,7 @@ using Factories;
 using UnityEngine;
 using Zenject;
 
-namespace Infrastructure
+namespace Infrastructure.Bootstrap
 {
     public class SceneBootstrap : MonoBehaviour
     {

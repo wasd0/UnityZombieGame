@@ -1,15 +1,16 @@
 using System.Collections;
 using Entities;
+using Entities.Interfaces;
 using Services;
 using UnityEngine;
 using Zenject;
 
-namespace MonoBehaviours
+namespace MonoBehaviours.GameObjects.Entity.Player
 {
-    [RequireComponent(typeof(Player))]
+    [RequireComponent(typeof(Entities.Neutral.Player))]
     public class PlayerAttackHandler : MonoBehaviour
     {
-        private Player _player;
+        private Entities.Neutral.Player _player;
         private bool _isCooldownActive;
         private MouseService _mouseService;
 
@@ -21,7 +22,7 @@ namespace MonoBehaviours
 
         private void Awake()
         {
-            _player = GetComponent<Player>();
+            _player = GetComponent<Entities.Neutral.Player>();
         }
 
         private void Attack()

@@ -1,8 +1,9 @@
 using Entities;
+using Entities.Neutral;
 using UnityEngine;
 using Zenject;
 
-namespace MonoBehaviours
+namespace MonoBehaviours.GameObjects.Camera
 {
     public class CameraFollow : MonoBehaviour
     {

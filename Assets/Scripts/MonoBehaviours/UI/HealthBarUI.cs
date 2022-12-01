@@ -1,4 +1,5 @@
 using Entities;
+using Entities.Interfaces;
 using Entities.Neutral;
 using UnityEngine;
 using UnityEngine.UI;

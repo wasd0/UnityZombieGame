@@ -1,21 +1,24 @@
 using UnityEngine;
 using Zenject;
 
-namespace MonoBehaviours
+namespace MonoBehaviours.Input
 {
     public abstract  class DeviceInput : MonoBehaviour
     {
         protected PlayerInput _input;
-
-        public abstract float GetVerticalAxis();
-        public abstract float GetHorizontalAxis();
 
         [Inject]
         private void Construct(PlayerInput input)
         {
             _input = input;
         }
-        
+
+        /*private void Update()
+        {
+            GetHorizontalAxis();
+            GetVerticalAxis();
+        }*/
+
         private void OnEnable()
         {
             _input.Enable();
@@ -25,5 +28,8 @@ namespace MonoBehaviours
         {
             _input.Disable();
         }
+
+        public abstract float GetVerticalAxis();
+        public abstract float GetHorizontalAxis();
     }
 }

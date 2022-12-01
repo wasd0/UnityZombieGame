@@ -2,9 +2,9 @@ using Services;
 using UnityEngine;
 using Zenject;
 
-namespace MonoBehaviours
+namespace MonoBehaviours.GameObjects.Entity.Player
 {
-    public class PlayerRotateWithMouse : MonoBehaviour
+    public class PlayerMouseLook : MonoBehaviour
     {
         [SerializeField] private float _rotateSpeed;
         private MouseService _mouseService;

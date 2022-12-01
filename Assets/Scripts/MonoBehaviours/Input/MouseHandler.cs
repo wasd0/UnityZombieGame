@@ -2,7 +2,7 @@ using Services;
 using UnityEngine;
 using Zenject;
 
-namespace MonoBehaviours
+namespace MonoBehaviours.Input
 {
     public class MouseHandler : MonoBehaviour
     {

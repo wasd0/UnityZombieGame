@@ -1,9 +1,7 @@
 using Entities;
+using Entities.Neutral;
 using Factories.Components;
-using MonoBehaviours;
-using Services;
 using UnityEngine;
-using Zenject;
 
 namespace Factories
 {

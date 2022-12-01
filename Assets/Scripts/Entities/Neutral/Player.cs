@@ -1,7 +1,7 @@
-using Entities.Neutral;
+using Entities.Interfaces;
 using Items.Weapon;
 
-namespace Entities
+namespace Entities.Neutral
 {
     public class Player :  Entity, IAttacker
     {

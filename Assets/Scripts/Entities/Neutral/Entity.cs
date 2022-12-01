@@ -1,4 +1,5 @@
 using System;
+using Entities.Interfaces;
 using UnityEngine;
 
 namespace Entities.Neutral
