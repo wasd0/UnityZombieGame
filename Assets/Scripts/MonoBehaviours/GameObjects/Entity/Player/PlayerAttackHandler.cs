@@ -1,5 +1,4 @@
 using System.Collections;
-using Entities;
 using Entities.Interfaces;
 using Services;
 using UnityEngine;
@@ -39,7 +38,7 @@ namespace MonoBehaviours.GameObjects.Entity.Player
         {
             Transform playerTransform = _player.transform;
             return Physics.Raycast(playerTransform.position, playerTransform.forward, out hit,
-                _player.Weapon.Range);
+                _player.Weapon.Preset.Range);
         }
 
         private void SentDamage(in RaycastHit hit)
@@ -52,7 +51,7 @@ namespace MonoBehaviours.GameObjects.Entity.Player
         private IEnumerator WaitForCooldown()
         {
             _isCooldownActive = true;
-            yield return new WaitForSeconds(_player.Weapon.CooldownAttack);
+            yield return new WaitForSeconds(_player.Weapon.Preset.AttackRate);
             _isCooldownActive = false;
         }
 

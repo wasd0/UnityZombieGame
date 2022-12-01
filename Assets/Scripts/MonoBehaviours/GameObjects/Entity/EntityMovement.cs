@@ -36,7 +36,7 @@ namespace MonoBehaviours.GameObjects.Entity
         {
             return Physics.CheckSphere(_groundCheck.position, GROUND_DISTANCE, _groundMask);
         }
-
+        
         protected abstract void Move();
     }
 }

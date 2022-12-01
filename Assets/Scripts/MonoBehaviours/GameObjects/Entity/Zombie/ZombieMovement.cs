@@ -26,7 +26,7 @@ namespace MonoBehaviours.GameObjects.Entity.Zombie
             if (ZombieLocator.CompareDistance(_player, transform, _minDistanceToPlayer))
             {
                 Move();
-            }
+            } 
         }
 
         protected override void Move()

@@ -1,9 +1,6 @@
 namespace Items.Weapon
 {
-    public class Pistol : Weapon
+    public class Pistol : Gun
     {
-        public Pistol(float damage, float range, float shootDelay) : base(damage, range, shootDelay)
-        {
-        }
     }
 }
