@@ -12,13 +12,7 @@ namespace MonoBehaviours.Input
         {
             _input = input;
         }
-
-        /*private void Update()
-        {
-            GetHorizontalAxis();
-            GetVerticalAxis();
-        }*/
-
+        
         private void OnEnable()
         {
             _input.Enable();

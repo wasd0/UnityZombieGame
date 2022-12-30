@@ -7,8 +7,11 @@ namespace Infrastructure.Bootstrap
 {
     public class SceneBootstrap : MonoBehaviour
     {
+        [Header("Spawn zombie before the game starts")]
+        
         [SerializeField] private int _countZombieForSpawn;
         [SerializeField] private float _spawnDelayInSeconds;
+        
         private ZombieFactory _zombieFactory;
 
         [Inject]

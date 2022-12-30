@@ -14,8 +14,8 @@ namespace Infrastructure.Installers
         private void BindMouseHandler()
         {
             Container.
-                Bind<MouseService>().
-                FromNew().
+                Bind<ILookService>().
+                To<MouseLookService>().
                 AsSingle().
                 NonLazy();
         }

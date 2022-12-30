@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MonoBehaviours.GameObjects.Entity.Player
 {
-    public class PlayerMovement : EntityMovement
+    public class PlayerMovement : MonoBehaviour, IEntityMovement
     {
         [SerializeField] private float _speed;
         [SerializeField] private CharacterController _characterController;
@@ -15,7 +15,7 @@ namespace MonoBehaviours.GameObjects.Entity.Player
 
         private PlayerMovementComponents _movementComponents;
 
-        protected override CharacterController CharacterController => _characterController;
+        public CharacterController CharacterController => _characterController;
 
         private void Awake()
         {
@@ -34,10 +34,10 @@ namespace MonoBehaviours.GameObjects.Entity.Player
             _verticalAxis = _input.GetVerticalAxis();
         }
 
-        protected override void Move()
+        public void Move()
         {
-            float relativeSpeed = _speed * Time.deltaTime;
-            Vector3 moveDirection = transform.forward * _verticalAxis + transform.right * _horizontalAxis;
+            var relativeSpeed = _speed * Time.deltaTime;
+            var moveDirection = transform.forward * _verticalAxis + transform.right * _horizontalAxis;
             
             CharacterController.Move(moveDirection * relativeSpeed);
         }

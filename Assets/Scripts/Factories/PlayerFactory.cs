@@ -1,4 +1,3 @@
-using Entities;
 using Entities.Neutral;
 using Factories.Components;
 using UnityEngine;

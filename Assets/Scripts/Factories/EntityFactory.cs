@@ -5,9 +5,10 @@ using Zenject;
 namespace Factories
 {
     public abstract class EntityFactory<T> : IFactory<T>
-        where T : Entity
+        where T : EntityComponents
     {
-        [Inject] protected readonly DiContainer _diContainer;
+        [Inject] 
+        protected readonly DiContainer _diContainer;
 
         protected abstract Vector3 SpawnPosition { get; }
         protected abstract string PrefabPath { get; }

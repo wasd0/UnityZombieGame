@@ -4,16 +4,15 @@ using Zenject;
 
 namespace MonoBehaviours.GameObjects.Entity.Zombie
 {
-    public class ZombieMovement : EntityMovement
+    public class ZombieMovement : MonoBehaviour, IEntityMovement
     {
         [SerializeField] private float _speed = 3;
         [SerializeField] private float _minDistanceToPlayer = 20;
         [SerializeField] private CharacterController _characterController;
 
-        protected override CharacterController CharacterController => _characterController;
-        
         private Entities.Neutral.Player _player;
-
+        
+        public CharacterController CharacterController => _characterController;
 
         [Inject]
         private void Construct(Entities.Neutral.Player player)
@@ -29,7 +28,7 @@ namespace MonoBehaviours.GameObjects.Entity.Zombie
             } 
         }
 
-        protected override void Move()
+        public void Move()
         {
             var relativeSpeed = _speed * Time.deltaTime;
             CharacterController.Move(transform.forward * relativeSpeed);

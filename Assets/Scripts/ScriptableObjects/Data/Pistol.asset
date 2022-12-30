@@ -16,4 +16,4 @@ MonoBehaviour:
   _range: 15
   _attackRate: 0.5
   _reloadTime: 3
-  _ammo: 24
+  _maxAmmo: 24

@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Look",
+                    "name": "MouseLook",
                     "type": "Value",
                     "id": "949f50c3-1f77-4718-bbed-01fa12fdc87a",
                     "expectedControlType": "Axis",
@@ -87,7 +87,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Look",
+                    "action": "MouseLook",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
