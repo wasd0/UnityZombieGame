@@ -1,4 +1,4 @@
-using Entities.Neutral;
+using MonoBehaviours.GameObjects.MonoEntity;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +8,7 @@ namespace MonoBehaviours.UI
     public class HealthBarView : MonoBehaviour
     {
         [SerializeField] private Image _healthBar;
-        [SerializeField] private EntityMono entityMono;
+        [SerializeField] private DamageableCollidingEntity _damageable;
 
         private void UpdateHealthBarView(float currentHealth, float maxHealth)
         {
@@ -17,12 +17,12 @@ namespace MonoBehaviours.UI
         
         private void OnEnable()
         {
-            entityMono.Health.OnValueChanged += UpdateHealthBarView;
+            _damageable.Health.OnValueChanged += UpdateHealthBarView;
         }
 
         private void OnDisable()
         {
-            entityMono.Health.OnValueChanged -= UpdateHealthBarView;
+            _damageable.Health.OnValueChanged -= UpdateHealthBarView;
         }
     }
 }

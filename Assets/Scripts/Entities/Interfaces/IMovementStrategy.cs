@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Entities.Interfaces
 {
-    public interface IMovement
+    public interface IMovementStrategy
     {
         public void MoveWithSpeed(GameObject gameObject, Vector3 direction, float speed);
     }

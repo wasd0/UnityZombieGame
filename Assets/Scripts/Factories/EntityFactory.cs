@@ -1,11 +1,10 @@
-using Entities.Neutral;
 using UnityEngine;
 using Zenject;
 
 namespace Factories
 {
     public abstract class EntityFactory<T> : IFactory<T>
-        where T : EntityMono
+        where T : MonoBehaviour
     {
         [Inject] 
         protected readonly DiContainer _diContainer;

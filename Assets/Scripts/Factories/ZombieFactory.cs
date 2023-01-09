@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Factories
 {
-    public class ZombieFactory : EntityFactory<ZombieMono>
+    public class ZombieFactory : EntityFactory<MovementToPlayer>
     {
         private const string ZOMBIE_PATH = "Prefabs/Zombie";
         

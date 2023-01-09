@@ -1,8 +1,7 @@
-using MonoBehaviours.GameObjects.Items;
 using Objects.Interfaces;
 using UnityEngine;
 
-namespace MonoBehaviours.GameObjects.MonoEntity
+namespace MonoBehaviours.GameObjects.MonoEntity.Player
 {
     public class PlayerSphereColliding : MonoBehaviour
     {
@@ -35,7 +34,7 @@ namespace MonoBehaviours.GameObjects.MonoEntity
             }
         }
         
-        private static ICollidingItem GetCollidingItem(Collider colliding)
+        private ICollidingItem GetCollidingItem(Collider colliding)
         {
             return colliding != null && colliding.
                 TryGetComponent(out ICollidingItem item) ?

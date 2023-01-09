@@ -1,8 +1,5 @@
-using Entities;
-using Entities.Neutral;
 using Factories;
 using Factories.Components;
-using MonoBehaviours;
 using MonoBehaviours.GameObjects.Camera;
 using MonoBehaviours.GameObjects.MonoEntity.Player;
 using MonoBehaviours.GameObjects.MonoEntity.Zombie;
@@ -43,7 +40,7 @@ namespace Infrastructure.Installers
         private void BindPlayer()
         {
             Container.
-                Bind<PlayerMono>().
+                Bind<PlayerMovementTest>().
                 FromFactory<PlayerFactory>().
                 AsSingle().
                 NonLazy();
@@ -52,7 +49,7 @@ namespace Infrastructure.Installers
         private void BindZombie()
         {
             Container.
-                Bind<ZombieMono>().
+                Bind<MovementToPlayer>().
                 FromFactory<ZombieFactory>().
                 AsSingle().
                 NonLazy();

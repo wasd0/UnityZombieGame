@@ -16,72 +16,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29bfe3ff-127f-44ba-8493-a4f6863fdf32" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/DistanceCalculator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/PlayerSphereColliding.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthMonitor.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.First/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Pistol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Pistol.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Zombie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Zombie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerMovementComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerMovementComponents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/EntityComponents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/EntityMono.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/EntityComponents.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/EntityMono.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerMovementComponents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerMovementComponents.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/DistanceCalculator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/DistanceCalculator.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMonoDamageable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IDamageable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMonoDamageable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IEntityMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IEntityMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMovementStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMovementStrategy.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Bootstrap/SceneBootstrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Bootstrap/SceneSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Bootstrap/SceneBootstrap.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Bootstrap/SceneSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/DontDestroyInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/DontDestroyInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Debug/GizmoDisplay.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Debug/GizmoDisplay.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Camera/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Camera/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/EntityColliding.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/EntityColliding.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/EntityGravitation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Gravitation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/EntityGravitation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Gravitation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Player.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Player/MouseLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/LookTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Player/MouseLook.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/LookTest.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerMovementTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Player/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerMovementTest.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Zombie.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Zombie/ZombieLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieLook.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Zombie/ZombieLook.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieLook.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Zombie/ZombieMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/MovementToPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Zombie/ZombieMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/MovementToPlayer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Items.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Items/CollidingHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Items/CollidingHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/PlayerSphereColliding.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/AttackInputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/MouseAndTouchInputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/AttackInputHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/MouseAndTouchInputHandler.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/DeviceInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/DeviceInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/KeyboardInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/KeyboardInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/Billboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthBarViewer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/Billboard.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthbarViewer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/EntityMono.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/DamageableCollidingEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/EntityMono.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/DamageableCollidingEntity.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Gravitation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Gravitation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/LookTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/LookTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerMono.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerMono.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerMovementTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerMovementTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/PlayerSphereColliding.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerSphereColliding.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/PlayerSphereColliding.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerSphereColliding.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/MovementToPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/MovementToPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieLook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieMono.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieMono.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthBarView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthBarView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Interfaces/ICollidingItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Interfaces/ICollidingItem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Weapon.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Weapon/Weapon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Weapon/Weapon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/ILookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Interfaces/ILookInputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/ILookService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Interfaces/ILookInputService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/IMovementService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/MouseLookService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/MouseLookInputService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/MouseLookService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/MouseLookInputService.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/WalkMovementService.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/ZombieLocator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/ZombieLocator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/DistanceCalculator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthBarViewer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthMonitor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthbarViewer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Interfaces/IGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Interfaces/IGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovementStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovementStrategy.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +68,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/54E510DE-C0FF-4790-BABC-F832AFEC988F/38/fad79cb1/Physics.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthBarViewer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthMonitor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5B293C7-4049-457C-ABC2-8437C5A76392/a8/abba1cda/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1D3DACD0-0CE4-41DC-8C61-D528A2193088/07/2dcb7262/Quaternion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.4/InputSystem/Controls/InputControl.cs" root0="SKIP_HIGHLIGHTING" />
@@ -112,34 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/Zombie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthBarView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/EntityComponents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/EntityMono.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Zombie/ZombieMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/CollidingHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/EntityGravitation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Colliding.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/DeviceInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/KeyboardInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Player/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Player/PlayerMovementTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Gravitation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Entity/Player/LookTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/ZombieMono.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Neutral/PlayerMono.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/DontDestroyInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieMono.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerMono.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Colliding.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/Interfaces/ILookService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/Interfaces/IMovementService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/MouseLookService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovementService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Interfaces/IColliding.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Interfaces/IDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/Input/MouseAndTouchInputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthbarViewer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthBarViewer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Items/WeaponColliding.cs" />
@@ -149,7 +96,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Items/DestrayableCollidingItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/CollidingPlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Bootstrap/SceneSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/PlayerSphereColliding.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Items/DestroyableCollidingItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Items/ICollidingItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Interfaces/ICollidingItem.cs" />
@@ -157,12 +103,41 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/Interfaces/IMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/ZombieLocator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieLook.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieMoveToPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/EntityMono.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/EntityDamageColliding.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IMonoDamageable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/PlayerSphereColliding.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/DamageableCollidingEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthBarView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/EntityFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/PlayerFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/Camera/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Enemy/DistanceCalculator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/MovementToPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieLook.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/UI/HealthMonitor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Components/PlayerMovementComponents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Gravitation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Services/Implementations/WalkMovementStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Implementations/ZombieMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Implementations/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/LookTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Interfaces/IEntityMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Implementations/EntityMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/DontDestroyInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerMovementTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Implementations/ForwardMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Implementations/DirectionMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/ZombieMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/ZombieMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Installers/LocationInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Factories/ZombieFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Zombie/MovementToPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/MovementForward.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/Static Classes/MovementForward.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Entities/StaticClasses/MovementForward.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/GameObjects/MonoEntity/Player/PlayerSphereColliding.cs" />
       </list>
     </option>
   </component>
@@ -179,6 +154,7 @@
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3002736" />
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionAnalysis.ShowFrameworks" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -280,7 +256,7 @@
       <workItem from="1673086850314" duration="4672000" />
       <workItem from="1673206529465" duration="4028000" />
       <workItem from="1673254979214" duration="3889000" />
-      <workItem from="1673260463376" duration="384000" />
+      <workItem from="1673260463376" duration="12405000" />
     </task>
     <servers />
   </component>
@@ -406,9 +382,13 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="304" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1668639165656" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1673207787703">
+    <state x="419" y="31" width="698" height="801" key="find.popup" timestamp="1673262380917">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1673207787703" />
+    <state x="419" y="31" width="698" height="801" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1673262380917" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1673263416064">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1673263416064" />
   </component>
 </project>

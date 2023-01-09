@@ -2,9 +2,9 @@ using Entities.Components;
 using Entities.Interfaces;
 using UnityEngine;
 
-namespace Entities.Neutral
+namespace MonoBehaviours.GameObjects.MonoEntity
 {
-    public class EntityMono : MonoBehaviour, IDamageable, ICollidingEntity
+    public class DamageableCollidingEntity : MonoBehaviour, IMonoDamageable, ICollidingEntity
     {
         [Header("Health")]
         [SerializeField] private float _healthCurrent;

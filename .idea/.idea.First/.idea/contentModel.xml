@@ -26,17 +26,15 @@
             <e p="Components" t="Include">
               <e p="Damage.cs" t="Include" />
               <e p="Health.cs" t="Include" />
-              <e p="PlayerMovementComponents.cs" t="Include" />
               <e p="ValueComponent.cs" t="Include" />
-            </e>
-            <e p="Enemy" t="Include">
-              <e p="DistanceCalculator.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
               <e p="ICollidingEntity.cs" t="Include" />
-              <e p="IDamageable.cs" t="Include" />
-              <e p="IEntityMovement.cs" t="Include" />
-              <e p="IMovement.cs" t="Include" />
+              <e p="IMonoDamageable.cs" t="Include" />
+              <e p="IMovementStrategy.cs" t="Include" />
+            </e>
+            <e p="StaticClasses" t="Include">
+              <e p="MovementForward.cs" t="Include" />
             </e>
           </e>
           <e p="Factories" t="Include">
@@ -71,18 +69,16 @@
                 <e p="DestroyableCollidingItem.cs" t="Include" />
               </e>
               <e p="MonoEntity" t="Include">
-                <e p="EntityMono.cs" t="Include" />
+                <e p="DamageableCollidingEntity.cs" t="Include" />
                 <e p="Gravitation.cs" t="Include" />
                 <e p="Player" t="Include">
                   <e p="LookTest.cs" t="Include" />
-                  <e p="PlayerMono.cs" t="Include" />
                   <e p="PlayerMovementTest.cs" t="Include" />
+                  <e p="PlayerSphereColliding.cs" t="Include" />
                 </e>
-                <e p="PlayerSphereColliding.cs" t="Include" />
                 <e p="Zombie" t="Include">
                   <e p="MovementToPlayer.cs" t="Include" />
                   <e p="ZombieLook.cs" t="Include" />
-                  <e p="ZombieMono.cs" t="Include" />
                 </e>
               </e>
             </e>
@@ -93,7 +89,7 @@
             </e>
             <e p="UI" t="Include">
               <e p="HealthBarView.cs" t="Include" />
-              <e p="HealthbarViewer.cs" t="Include" />
+              <e p="HealthMonitor.cs" t="Include" />
             </e>
           </e>
           <e p="Objects" t="Include">
@@ -106,7 +102,6 @@
               <e p="IDamageSource.cs" t="Include" />
               <e p="IGun.cs" t="Include" />
             </e>
-            <e p="Weapon" t="Include" />
           </e>
           <e p="ScriptableObjects" t="Include">
             <e p="Data" t="Include" />
@@ -118,7 +113,7 @@
           <e p="Services" t="Include">
             <e p="Implementations" t="Include">
               <e p="MouseLookInputService.cs" t="Include" />
-              <e p="WalkMovement.cs" t="Include" />
+              <e p="WalkMovementStrategy.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
               <e p="ILookInputService.cs" t="Include" />

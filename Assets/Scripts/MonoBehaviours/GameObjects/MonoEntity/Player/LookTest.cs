@@ -1,10 +1,10 @@
-using Services;
 using Services.Interfaces;
 using UnityEngine;
 using Zenject;
 
-namespace MonoBehaviours.GameObjects.Entity.Player
+namespace MonoBehaviours.GameObjects.MonoEntity.Player
 {
+    //TODO: TEST VARIANT
     public class LookTest : MonoBehaviour
     {
         [SerializeField] [Range(1, 20)] private float _rotateSpeed;

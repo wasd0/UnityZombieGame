@@ -1,11 +1,10 @@
-using Entities.Neutral;
 using Factories.Components;
 using MonoBehaviours.GameObjects.MonoEntity.Player;
 using UnityEngine;
 
 namespace Factories
 {
-    public class PlayerFactory : EntityFactory<PlayerMono>
+    public class PlayerFactory : EntityFactory<PlayerMovementTest>
     {
         private const string PLAYER_PATH = "Prefabs/Player";
         

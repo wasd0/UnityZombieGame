@@ -4,7 +4,7 @@ using Zenject;
 
 namespace MonoBehaviours.UI
 {
-    public class HealthBarViewer : MonoBehaviour
+    public class HealthMonitor : MonoBehaviour
     {
         private Transform _cameraTransform;
 

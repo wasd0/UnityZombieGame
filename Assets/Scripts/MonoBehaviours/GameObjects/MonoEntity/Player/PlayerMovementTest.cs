@@ -1,25 +1,19 @@
-using Entities.Components;
-using MonoBehaviours.GameObjects.Entity;
 using MonoBehaviours.Input;
 using UnityEngine;
 using Zenject;
 
 namespace MonoBehaviours.GameObjects.MonoEntity.Player
 {
-    public class PlayerMovementTest : MonoBehaviour, IEntityMovement
+    public class PlayerMovementTest : MonoBehaviour
     {
         [SerializeField] private float _speed;
 
         private CharacterController _characterController;
 
-        //TODO: Add smartphone support
+        //TODO: TEST VARIANT
         private DeviceInput _input;
         private float _horizontalAxis;
         private float _verticalAxis;
-
-        private PlayerMovementComponents _movementComponents;
-
-        public CharacterController CharacterController => _characterController;
 
         [Inject]
         private void Construct(PlayerInput playerInput)
@@ -30,7 +24,7 @@ namespace MonoBehaviours.GameObjects.MonoEntity.Player
         private void Update()
         {
             GetMoveDirection();
-            Move();
+            Move(transform, _speed);
         }
 
         private void GetMoveDirection()
@@ -39,12 +33,12 @@ namespace MonoBehaviours.GameObjects.MonoEntity.Player
             _verticalAxis = _input.GetVerticalAxis();
         }
 
-        public void Move()
+        private void Move(Transform thisTransform, float speed)
         {
-            var relativeSpeed = _speed * Time.deltaTime;
-            var moveDirection = transform.forward * _verticalAxis + transform.right * _horizontalAxis;
+            var relativeSpeed = speed * Time.deltaTime;
+            var moveDirection = thisTransform.forward * _verticalAxis + transform.right * _horizontalAxis;
 
-            CharacterController.Move(moveDirection * relativeSpeed);
+            _characterController.Move(moveDirection * relativeSpeed);
         }
 
         private void OnEnable()

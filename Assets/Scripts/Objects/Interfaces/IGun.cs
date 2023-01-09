@@ -4,6 +4,6 @@ namespace Objects.Interfaces
 {
     public interface IGun : IDamageSource
     {
-        public void Shoot(IDamageable target);
+        public void Shoot(IMonoDamageable target);
     }
 }
