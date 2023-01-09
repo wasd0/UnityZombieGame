@@ -1,16 +1,18 @@
+using Entities.Interfaces;
 using MonoBehaviours.Input;
 using Services;
+using Services.Interfaces;
 
 namespace Entities.Components
 {
     public readonly struct PlayerMovementComponents
     {
-        public readonly IMovementService MovementService;
+        public readonly IMovement movement;
         public readonly DeviceInput DeviceInput;
 
-        public PlayerMovementComponents(IMovementService movementService, DeviceInput deviceInput)
+        public PlayerMovementComponents(IMovement movement, DeviceInput deviceInput)
         {
-            MovementService = movementService;
+            this.movement = movement;
             DeviceInput = deviceInput;
         }
     }

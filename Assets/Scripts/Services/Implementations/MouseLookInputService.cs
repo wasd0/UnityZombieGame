@@ -1,11 +1,11 @@
 using System;
-using UnityEngine;
+using Services.Interfaces;
 using UnityEngine.InputSystem;
 using Zenject;
 
-namespace Services
+namespace Services.Implementations
 {
-    public class MouseLookService : ILookService
+    public class MouseLookInputService : ILookInputService
     {
         public event Action OnClicked;
 

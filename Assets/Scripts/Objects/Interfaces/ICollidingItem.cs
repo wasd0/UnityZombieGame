@@ -1,9 +1,11 @@
-using UnityEngine;
+using System;
 
-namespace MonoBehaviours.GameObjects.Colliding
+namespace Objects.Interfaces
 {
     public interface ICollidingItem
     {
-        public void Collide(Collider other);
+        public event Action OnCollisionDetected;
+        
+        public void Collide();
     }
 }

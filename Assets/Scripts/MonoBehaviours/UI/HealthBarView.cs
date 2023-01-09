@@ -8,7 +8,7 @@ namespace MonoBehaviours.UI
     public class HealthBarView : MonoBehaviour
     {
         [SerializeField] private Image _healthBar;
-        [SerializeField] private EntityComponents entityComponents;
+        [SerializeField] private EntityMono entityMono;
 
         private void UpdateHealthBarView(float currentHealth, float maxHealth)
         {
@@ -17,12 +17,12 @@ namespace MonoBehaviours.UI
         
         private void OnEnable()
         {
-            entityComponents.Health.OnValueChanged += UpdateHealthBarView;
+            entityMono.Health.OnValueChanged += UpdateHealthBarView;
         }
 
         private void OnDisable()
         {
-            entityComponents.Health.OnValueChanged -= UpdateHealthBarView;
+            entityMono.Health.OnValueChanged -= UpdateHealthBarView;
         }
     }
 }

@@ -1,14 +1,18 @@
 using Entities.Components;
+using MonoBehaviours.GameObjects.Entity;
 using MonoBehaviours.Input;
 using UnityEngine;
+using Zenject;
 
-namespace MonoBehaviours.GameObjects.Entity.Player
+namespace MonoBehaviours.GameObjects.MonoEntity.Player
 {
-    public class PlayerMovement : MonoBehaviour, IEntityMovement
+    public class PlayerMovementTest : MonoBehaviour, IEntityMovement
     {
         [SerializeField] private float _speed;
-        [SerializeField] private CharacterController _characterController;
-        //TODO: Adapt to smartphone
+
+        private CharacterController _characterController;
+
+        //TODO: Add smartphone support
         private DeviceInput _input;
         private float _horizontalAxis;
         private float _verticalAxis;
@@ -17,18 +21,19 @@ namespace MonoBehaviours.GameObjects.Entity.Player
 
         public CharacterController CharacterController => _characterController;
 
-        private void Awake()
+        [Inject]
+        private void Construct(PlayerInput playerInput)
         {
-            _input = GetComponent<DeviceInput>();
+            _input = new KeyboardInput(playerInput);
         }
 
         private void Update()
         {
-            ReadAxis();
+            GetMoveDirection();
             Move();
         }
 
-        private void ReadAxis()
+        private void GetMoveDirection()
         {
             _horizontalAxis = _input.GetHorizontalAxis();
             _verticalAxis = _input.GetVerticalAxis();
@@ -38,8 +43,19 @@ namespace MonoBehaviours.GameObjects.Entity.Player
         {
             var relativeSpeed = _speed * Time.deltaTime;
             var moveDirection = transform.forward * _verticalAxis + transform.right * _horizontalAxis;
-            
+
             CharacterController.Move(moveDirection * relativeSpeed);
+        }
+
+        private void OnEnable()
+        {
+            _characterController = GetComponent<CharacterController>();
+            _input.Input.Enable();
+        }
+
+        private void OnDisable()
+        {
+            _input.Input.Disable();
         }
     }
 }

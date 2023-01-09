@@ -1,10 +1,10 @@
-using Entities.Enemy;
 using Factories.Components;
+using MonoBehaviours.GameObjects.MonoEntity.Zombie;
 using UnityEngine;
 
 namespace Factories
 {
-    public class ZombieFactory : EntityFactory<Zombie>
+    public class ZombieFactory : EntityFactory<ZombieMono>
     {
         private const string ZOMBIE_PATH = "Prefabs/Zombie";
         

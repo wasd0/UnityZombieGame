@@ -4,9 +4,10 @@ using UnityEngine;
 
 namespace Entities.Neutral
 {
-    public class EntityComponents : MonoBehaviour, IDamageable, ICollidingEntity
+    public class EntityMono : MonoBehaviour, IDamageable, ICollidingEntity
     {
-        [SerializeField] private float _healthValueCurrent;
+        [Header("Health")]
+        [SerializeField] private float _healthCurrent;
         [SerializeField] private float _healthMax;
 
         private Health _health;
@@ -15,7 +16,7 @@ namespace Entities.Neutral
 
         private void Awake()
         {
-            _health = new Health(_healthValueCurrent, _healthMax);
+            _health = new Health(_healthCurrent, _healthMax);
         }
 
         public void HandleCollision(OnEntityCollided onEntityCollided)

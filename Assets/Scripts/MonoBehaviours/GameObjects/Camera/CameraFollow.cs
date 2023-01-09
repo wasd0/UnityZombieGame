@@ -1,4 +1,5 @@
 using Entities.Neutral;
+using MonoBehaviours.GameObjects.MonoEntity.Player;
 using UnityEngine;
 using Zenject;
 
@@ -10,9 +11,9 @@ namespace MonoBehaviours.GameObjects.Camera
         private Transform _playerTransform;
 
         [Inject]
-        private void Construct(Player player)
+        private void Construct(PlayerMono playerMono)
         {
-            _playerTransform = player.transform;
+            _playerTransform = playerMono.transform;
         }
 
         private void LateUpdate()
