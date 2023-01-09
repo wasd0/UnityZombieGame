@@ -30,16 +30,13 @@
               <e p="ValueComponent.cs" t="Include" />
             </e>
             <e p="Enemy" t="Include">
-              <e p="Zombie.cs" t="Include" />
+              <e p="DistanceCalculator.cs" t="Include" />
             </e>
             <e p="Interfaces" t="Include">
               <e p="ICollidingEntity.cs" t="Include" />
               <e p="IDamageable.cs" t="Include" />
               <e p="IEntityMovement.cs" t="Include" />
-            </e>
-            <e p="Neutral" t="Include">
-              <e p="EntityComponents.cs" t="Include" />
-              <e p="Player.cs" t="Include" />
+              <e p="IMovement.cs" t="Include" />
             </e>
           </e>
           <e p="Factories" t="Include">
@@ -53,7 +50,7 @@
           </e>
           <e p="Infrastructure" t="Include">
             <e p="Bootstrap" t="Include">
-              <e p="SceneBootstrap.cs" t="Include" />
+              <e p="SceneSpawner.cs" t="Include" />
             </e>
             <e p="Installers" t="Include">
               <e p="DontDestroyInstaller.cs" t="Include" />
@@ -65,36 +62,38 @@
             <e p="Debug" t="Include">
               <e p="DrawRayCast.cs" t="Include" />
               <e p="EnemyMarker.cs" t="Include" />
-              <e p="GizmoDisplay.cs" t="Include" />
             </e>
             <e p="GameObjects" t="Include">
               <e p="Camera" t="Include">
                 <e p="CameraFollow.cs" t="Include" />
               </e>
-              <e p="Entity" t="Include">
-                <e p="EntityColliding.cs" t="Include" />
-                <e p="EntityGravitation.cs" t="Include" />
-                <e p="Player" t="Include">
-                  <e p="MouseLook.cs" t="Include" />
-                  <e p="PlayerMovement.cs" t="Include" />
-                </e>
-                <e p="Zombie" t="Include">
-                  <e p="ZombieLook.cs" t="Include" />
-                  <e p="ZombieMovement.cs" t="Include" />
-                </e>
-              </e>
               <e p="Items" t="Include">
-                <e p="CollidingHandler.cs" t="Include" />
+                <e p="DestroyableCollidingItem.cs" t="Include" />
+              </e>
+              <e p="MonoEntity" t="Include">
+                <e p="EntityMono.cs" t="Include" />
+                <e p="Gravitation.cs" t="Include" />
+                <e p="Player" t="Include">
+                  <e p="LookTest.cs" t="Include" />
+                  <e p="PlayerMono.cs" t="Include" />
+                  <e p="PlayerMovementTest.cs" t="Include" />
+                </e>
+                <e p="PlayerSphereColliding.cs" t="Include" />
+                <e p="Zombie" t="Include">
+                  <e p="MovementToPlayer.cs" t="Include" />
+                  <e p="ZombieLook.cs" t="Include" />
+                  <e p="ZombieMono.cs" t="Include" />
+                </e>
               </e>
             </e>
             <e p="Input" t="Include">
-              <e p="AttackInputHandler.cs" t="Include" />
               <e p="DeviceInput.cs" t="Include" />
               <e p="KeyboardInput.cs" t="Include" />
+              <e p="MouseAndTouchInputHandler.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
-              <e p="Billboard.cs" t="Include" />
               <e p="HealthBarView.cs" t="Include" />
+              <e p="HealthbarViewer.cs" t="Include" />
             </e>
           </e>
           <e p="Objects" t="Include">
@@ -107,9 +106,7 @@
               <e p="IDamageSource.cs" t="Include" />
               <e p="IGun.cs" t="Include" />
             </e>
-            <e p="Weapon" t="Include">
-              <e p="Weapon.cs" t="Include" />
-            </e>
+            <e p="Weapon" t="Include" />
           </e>
           <e p="ScriptableObjects" t="Include">
             <e p="Data" t="Include" />
@@ -119,11 +116,13 @@
             </e>
           </e>
           <e p="Services" t="Include">
-            <e p="ILookService.cs" t="Include" />
-            <e p="IMovementService.cs" t="Include" />
-            <e p="MouseLookService.cs" t="Include" />
-            <e p="WalkMovementService.cs" t="Include" />
-            <e p="ZombieLocator.cs" t="Include" />
+            <e p="Implementations" t="Include">
+              <e p="MouseLookInputService.cs" t="Include" />
+              <e p="WalkMovement.cs" t="Include" />
+            </e>
+            <e p="Interfaces" t="Include">
+              <e p="ILookInputService.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Source" t="Include">

@@ -1,28 +1,15 @@
-using UnityEngine;
-using Zenject;
-
 namespace MonoBehaviours.Input
 {
-    public abstract  class DeviceInput : MonoBehaviour
+    public abstract  class DeviceInput
     {
-        protected PlayerInput _input;
-
-        [Inject]
-        private void Construct(PlayerInput input)
+        public PlayerInput Input { get; }
+        
+        public DeviceInput(PlayerInput input)
         {
-            _input = input;
+            Input = input;
+            Input.Enable();
         }
         
-        private void OnEnable()
-        {
-            _input.Enable();
-        }
-
-        private void OnDisable()
-        {
-            _input.Disable();
-        }
-
         public abstract float GetVerticalAxis();
         public abstract float GetHorizontalAxis();
     }

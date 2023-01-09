@@ -1,28 +1,29 @@
 using Services;
+using Services.Interfaces;
 using UnityEngine;
 using Zenject;
 
 namespace MonoBehaviours.GameObjects.Entity.Player
 {
-    public class MouseLook : MonoBehaviour
+    public class LookTest : MonoBehaviour
     {
-        [SerializeField] private float _rotateSpeed;
-        private ILookService _lookService;
+        [SerializeField] [Range(1, 20)] private float _rotateSpeed;
+        private ILookInputService _lookInputService;
         private float _rotateValue;
 
         [Inject]
-        private void Construct(ILookService lookService)
+        private void Construct(ILookInputService lookInputService)
         {
-            _lookService = lookService;
+            _lookInputService = lookInputService;
         }
 
         private void FixedUpdate()
         {
-            _rotateValue = _lookService.GetHorizontalAxis();
-            RotateToMouse();
+            _rotateValue = _lookInputService.GetHorizontalAxis();
+            Rotate();
         }
 
-        private void RotateToMouse()
+        private void Rotate()
         {
             var horizontalRotation = _rotateValue * _rotateSpeed * Time.fixedDeltaTime;
             

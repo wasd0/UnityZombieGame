@@ -7,14 +7,17 @@ namespace MonoBehaviours.Input
         private float _directionX;
         private float _directionZ;
 
+        public KeyboardInput(PlayerInput input) : base(input) {}
+
         public override float GetVerticalAxis()
         {
-            return _input.Player.Keyboard.ReadValue<Vector2>().y;
+            return Input.Player.Keyboard.ReadValue<Vector2>().y;
         }
-        
+
+
         public override float GetHorizontalAxis()
         {
-            return _input.Player.Keyboard.ReadValue<Vector2>().x;
+            return Input.Player.Keyboard.ReadValue<Vector2>().x;
         }
     }
 }

@@ -1,4 +1,6 @@
 using Services;
+using Services.Implementations;
+using Services.Interfaces;
 using Zenject;
 
 namespace Infrastructure.Installers
@@ -14,8 +16,8 @@ namespace Infrastructure.Installers
         private void BindMouseHandler()
         {
             Container.
-                Bind<ILookService>().
-                To<MouseLookService>().
+                Bind<ILookInputService>().
+                To<MouseLookInputService>().
                 AsSingle().
                 NonLazy();
         }
@@ -25,8 +27,7 @@ namespace Infrastructure.Installers
             Container.
                 Bind<PlayerInput>().
                 FromNew().
-                AsSingle().
-                NonLazy();
+                AsSingle();
         }
     }
 }

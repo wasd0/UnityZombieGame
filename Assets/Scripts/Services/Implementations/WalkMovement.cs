@@ -1,8 +1,10 @@
+using Entities.Interfaces;
+using Services.Interfaces;
 using UnityEngine;
 
-namespace Services
+namespace Services.Implementations
 {
-    public class WalkMovementService : IMovementService
+    public class WalkMovement : IMovement
     {
         public void MoveWithSpeed(GameObject gameObject, Vector3 direction, float speed)
         {

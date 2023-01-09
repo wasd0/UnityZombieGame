@@ -5,7 +5,7 @@ using Zenject;
 
 namespace Infrastructure.Bootstrap
 {
-    public class SceneBootstrap : MonoBehaviour
+    public class SceneSpawner : MonoBehaviour
     {
         [Header("Spawn zombie before the game starts")]
         

@@ -1,8 +1,8 @@
 using System;
 
-namespace Services
+namespace Services.Interfaces
 {
-    public interface ILookService
+    public interface ILookInputService
     {
         public event Action OnClicked;
         

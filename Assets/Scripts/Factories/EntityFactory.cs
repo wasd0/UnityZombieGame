@@ -5,7 +5,7 @@ using Zenject;
 namespace Factories
 {
     public abstract class EntityFactory<T> : IFactory<T>
-        where T : EntityComponents
+        where T : EntityMono
     {
         [Inject] 
         protected readonly DiContainer _diContainer;

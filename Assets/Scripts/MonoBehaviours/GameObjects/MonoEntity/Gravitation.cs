@@ -2,9 +2,9 @@ using UnityEngine;
 
 namespace MonoBehaviours.GameObjects.Entity
 {
-    public class EntityGravitation : MonoBehaviour
+    public class Gravitation : MonoBehaviour
     {
-        [SerializeField] private CharacterController _characterController;
+        private CharacterController _characterController;
         
         private Vector3 fallVelocity;
         private const float GRAVITY = -9.81f;
@@ -26,6 +26,11 @@ namespace MonoBehaviours.GameObjects.Entity
             fallVelocity.y += GRAVITY * Time.deltaTime;
 
             _characterController.Move(fallVelocity * Time.deltaTime);
+        }
+
+        private void OnEnable()
+        {
+            _characterController = GetComponent<CharacterController>();
         }
     }
 }
